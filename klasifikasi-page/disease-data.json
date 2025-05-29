@@ -1,0 +1,509 @@
+{
+  "corn": {
+    "Blight": {
+      "id": "corn-blight",
+      "name": "Blight (Hawar Daun Jagung)",
+      "scientificName": "Exserohilum turcicum",
+      "type": "Jamur",
+      "severity": "Tinggi",
+      "icon": "🍃",
+      "description": "Penyakit hawar daun jagung yang disebabkan oleh jamur Exserohilum turcicum, dapat menyebabkan kehilangan hasil hingga 50%.",
+      "images": [
+        "images/corn-blight-1.jpg",
+        "images/corn-blight-2.jpg",
+        "images/corn-blight-3.jpg"
+      ],
+      "symptoms": [
+        "Bercak memanjang berwarna abu-abu hingga coklat pada daun",
+        "Bercak dimulai dari daun bagian bawah kemudian menyebar ke atas",
+        "Bercak berbentuk elips dengan panjang 2-15 cm",
+        "Daun menguning dan mengering prematur",
+        "Pada serangan berat, seluruh tanaman dapat mati",
+        "Spora jamur terlihat sebagai massa hitam pada bercak"
+      ],
+      "causes": [
+        "Kelembaban udara tinggi (>80%)",
+        "Suhu optimal 18-27°C",
+        "Curah hujan tinggi dan berkepanjangan",
+        "Tanaman yang lemah akibat kekurangan nutrisi",
+        "Jarak tanam terlalu rapat"
+      ],
+      "treatment": {
+        "immediate": [
+          "Semprot fungisida sistemik berbahan aktif propikonazol",
+          "Pangkas dan bakar daun yang terinfeksi",
+          "Kurangi kelembaban dengan memperbaiki drainase",
+          "Aplikasi pupuk kalium untuk meningkatkan ketahanan"
+        ],
+        "pesticides": [
+          {
+            "name": "Tilt 250 EC",
+            "activeIngredient": "Propikonazol",
+            "dosage": "0.5-1 ml/liter air",
+            "interval": "7-10 hari",
+            "type": "Sistemik"
+          },
+          {
+            "name": "Score 250 EC",
+            "activeIngredient": "Difenokonazol",
+            "dosage": "0.5 ml/liter air",
+            "interval": "7-14 hari",
+            "type": "Sistemik"
+          },
+          {
+            "name": "Benlate 50 WP",
+            "activeIngredient": "Benomil",
+            "dosage": "2-3 g/liter air",
+            "interval": "10-14 hari",
+            "type": "Sistemik"
+          }
+        ],
+        "organic": [
+          "Ekstrak daun nimba (neem oil) 2-3 ml/liter air",
+          "Larutan baking soda 1 sendok teh/liter air",
+          "Kompos teh fermentasi untuk meningkatkan ketahanan",
+          "Mulsa organik untuk mengurangi kelembaban tanah"
+        ]
+      },
+      "prevention": [
+        "Gunakan varietas tahan penyakit seperti Pioneer P21",
+        "Rotasi tanaman dengan kacang-kacangan",
+        "Jaga jarak tanam minimal 25-30 cm",
+        "Bersihkan sisa tanaman setelah panen",
+        "Monitor kondisi tanaman secara rutin"
+      ],
+      "organicTips": [
+        "Tanam tanaman pendamping seperti marigold",
+        "Gunakan pupuk organik untuk meningkatkan imunitas",
+        "Semprot EM4 atau probiotik tanaman mingguan",
+        "Buat drainage yang baik dengan mulsa jerami"
+      ],
+      "nonOrganicTips": [
+        "Aplikasi fungisida preventif setiap 2 minggu",
+        "Gunakan pupuk NPK dengan kandungan K tinggi",
+        "Semprot mikronutrient untuk memperkuat tanaman",
+        "Monitoring dengan soil pH meter secara berkala"
+      ]
+    },
+    "Common_Rust": {
+      "id": "corn-rust",
+      "name": "Common Rust (Karat Jagung)",
+      "scientificName": "Puccinia sorghi",
+      "type": "Jamur",
+      "severity": "Sedang",
+      "icon": "🟤",
+      "description": "Penyakit karat yang umum menyerang jagung, ditandai dengan pustula berwarna coklat kemerahan pada daun.",
+      "images": [
+        "images/corn-rust-1.jpg",
+        "images/corn-rust-2.jpg",
+        "images/corn-rust-3.jpg"
+      ],
+      "symptoms": [
+        "Pustula kecil berwarna coklat kemerahan pada kedua sisi daun",
+        "Pustula berbentuk oval dan menonjol",
+        "Spora mudah lepas ketika disentuh",
+        "Daun menguning dan mengering pada serangan berat",
+        "Pertumbuhan tanaman terhambat",
+        "Tongkol jagung tidak berkembang sempurna"
+      ],
+      "causes": [
+        "Kelembaban tinggi (>70%)",
+        "Suhu 16-25°C",
+        "Adanya tanaman inang alternatif (Oxalis)",
+        "Angin kencang yang menyebarkan spora",
+        "Tanaman stres karena kekeringan"
+      ],
+      "treatment": {
+        "immediate": [
+          "Aplikasi fungisida berbahan aktif tebukonazol",
+          "Pangkas daun yang terinfeksi berat",
+          "Tingkatkan sirkulasi udara",
+          "Berikan pupuk dengan kandungan silika"
+        ],
+        "pesticides": [
+          {
+            "name": "Folicur 250 EW",
+            "activeIngredient": "Tebukonazol",
+            "dosage": "1-2 ml/liter air",
+            "interval": "7-10 hari",
+            "type": "Sistemik"
+          },
+          {
+            "name": "Baycor 300 EC",
+            "activeIngredient": "Bitertanol",
+            "dosage": "1 ml/liter air",
+            "interval": "10-14 hari",
+            "type": "Sistemik"
+          },
+          {
+            "name": "Dithane M-45",
+            "activeIngredient": "Mankozeb",
+            "dosage": "2-3 g/liter air",
+            "interval": "7-10 hari",
+            "type": "Kontak"
+          }
+        ],
+        "organic": [
+          "Semprot larutan belerang 2-3 g/liter air",
+          "Ekstrak bawang putih fermentasi",
+          "Larutan sabun insektisida 1-2 ml/liter",
+          "Aplikasi mikroorganisme antagonis Bacillus subtilis"
+        ]
+      },
+      "prevention": [
+        "Tanam varietas tahan karat seperti Bisi 18",
+        "Hindari penanaman terlalu rapat",
+        "Bersihkan gulma Oxalis di sekitar lahan",
+        "Rotasi dengan tanaman non-graminae",
+        "Monitoring cuaca dan kelembaban"
+      ],
+      "organicTips": [
+        "Gunakan mulsa untuk mengatur kelembaban tanah",
+        "Tanam tanaman pengusir seperti kemangi",
+        "Aplikasi kompos kaya silika dari sekam padi",
+        "Semprot teh kompos setiap 2 minggu"
+      ],
+      "nonOrganicTips": [
+        "Program penyemprotan fungisida preventif",
+        "Gunakan pupuk slow release untuk nutrisi seimbang",
+        "Monitor dengan weather station untuk prediksi serangan",
+        "Aplikasi adjuvant untuk meningkatkan efektivitas fungisida"
+      ]
+    },
+    "Gray_Leaf_Spot": {
+      "id": "corn-gray-spot",
+      "name": "Gray Leaf Spot (Bercak Abu-abu)",
+      "scientificName": "Cercospora zeae-maydis",
+      "type": "Jamur",
+      "severity": "Tinggi",
+      "icon": "⚫",
+      "description": "Penyakit yang menyebabkan bercak abu-abu memanjang pada daun jagung, dapat mengurangi hasil hingga 60%.",
+      "images": [
+        "images/corn-gray-spot-1.jpg",
+        "images/corn-gray-spot-2.jpg",
+        "images/corn-gray-spot-3.jpg"
+      ],
+      "symptoms": [
+        "Bercak memanjang berwarna abu-abu dengan tepi coklat",
+        "Bercak sejajar dengan tulang daun",
+        "Ukuran bercak 2-8 cm panjang, 2-4 mm lebar",
+        "Daun mengering dimulai dari ujung",
+        "Pada kondisi lembab, terlihat konidia abu-abu",
+        "Tanaman mudah rebah pada serangan berat"
+      ],
+      "causes": [
+        "Kelembaban relatif >90%",
+        "Suhu 22-30°C",
+        "Hujan berkepanjangan",
+        "Sistem tanam monokultur jagung",
+        "Sisa tanaman yang tidak dibersihkan"
+      ],
+      "treatment": {
+        "immediate": [
+          "Aplikasi fungisida strobilurin",
+          "Perbaiki drainase lahan",
+          "Kurangi kelembaban kanopi",
+          "Berikan pupuk kalium untuk ketahanan"
+        ],
+        "pesticides": [
+          {
+            "name": "Amistar 250 SC",
+            "activeIngredient": "Azoxystrobin",
+            "dosage": "0.5-1 ml/liter air",
+            "interval": "14 hari",
+            "type": "Sistemik"
+          },
+          {
+            "name": "Headline 250 EC",
+            "activeIngredient": "Pyraclostrobin",
+            "dosage": "1 ml/liter air",
+            "interval": "10-14 hari",
+            "type": "Sistemik"
+          },
+          {
+            "name": "Antracol 70 WP",
+            "activeIngredient": "Propineb",
+            "dosage": "2-3 g/liter air",
+            "interval": "7-10 hari",
+            "type": "Kontak"
+          }
+        ],
+        "organic": [
+          "Aplikasi Trichoderma harzianum",
+          "Semprot ekstrak daun pepaya",
+          "Larutan asam salisilat alami",
+          "Biochar untuk memperbaiki drainase tanah"
+        ]
+      },
+      "prevention": [
+        "Gunakan benih bersertifikat tahan penyakit",
+        "Rotasi dengan kedelai atau kacang tanah",
+        "Bersihkan sisa tanaman setelah panen",
+        "Atur jarak tanam untuk sirkulasi udara",
+        "Hindari irigasi berlebihan"
+      ],
+      "organicTips": [
+        "Kompos jerami untuk mulsa dan drainase",
+        "Konsorsium mikroba tanah yang sehat",
+        "Penanaman cover crop di luar musim",
+        "Penggunaan pupuk hijau dari kacang-kacangan"
+      ],
+      "nonOrganicTips": [
+        "Program fungisida rotasi untuk menghindari resistensi",
+        "Sistem irigasi tetes untuk mengurangi kelembaban daun",
+        "Sensor kelembaban tanah untuk monitoring",
+        "Aplikasi surfaktan untuk penetrasi fungisida optimal"
+      ]
+    }
+  },
+  "rice": {
+    "Bacterialblight": {
+      "id": "rice-bacterial-blight",
+      "name": "Bacterial Blight (Hawar Bakteri)",
+      "scientificName": "Xanthomonas oryzae pv. oryzae",
+      "type": "Bakteri",
+      "severity": "Tinggi",
+      "icon": "🦠",
+      "description": "Penyakit bakteri serius pada padi yang dapat menyebabkan kehilangan hasil hingga 75% pada varietas rentan.",
+      "images": [
+        "images/rice-bacterial-blight-1.jpg",
+        "images/rice-bacterial-blight-2.jpg",
+        "images/rice-bacterial-blight-3.jpg"
+      ],
+      "symptoms": [
+        "Garis kuning sepanjang tepi daun",
+        "Daun mengering dimulai dari ujung",
+        "Eksudasi bakteri berupa tetesan kuning pada pagi hari",
+        "Malai tidak keluar atau kosong",
+        "Anakan berkurang drastis",
+        "Tanaman mudah rebah"
+      ],
+      "causes": [
+        "Kelembaban tinggi >80%",
+        "Suhu 25-30°C",
+        "Luka pada tanaman akibat angin atau serangga",
+        "Air irigasi yang tercemar",
+        "Penggunaan pupuk nitrogen berlebihan"
+      ],
+      "treatment": {
+        "immediate": [
+          "Aplikasi bakterisida copper-based",
+          "Kurangi genangan air",
+          "Pangkas bagian yang terinfeksi",
+          "Berikan pupuk kalium dan silika"
+        ],
+        "pesticides": [
+          {
+            "name": "Kocide 2000",
+            "activeIngredient": "Copper hydroxide",
+            "dosage": "2-3 g/liter air",
+            "interval": "7-10 hari",
+            "type": "Kontak"
+          },
+          {
+            "name": "Bacterol",
+            "activeIngredient": "Streptomycin sulfate",
+            "dosage": "1-2 g/liter air",
+            "interval": "5-7 hari",
+            "type": "Sistemik"
+          },
+          {
+            "name": "Cupravit OB21",
+            "activeIngredient": "Copper oxychloride",
+            "dosage": "2-4 g/liter air",
+            "interval": "7-14 hari",
+            "type": "Kontak"
+          }
+        ],
+        "organic": [
+          "Ekstrak daun jambu biji",
+          "Larutan bawang merah fermentasi",
+          "Aplikasi Pseudomonas fluorescens",
+          "Semprot larutan garam dapur 0.2%"
+        ]
+      },
+      "prevention": [
+        "Gunakan varietas tahan seperti IR64, Ciherang",
+        "Benih bebas patogen dan bersertifikat",
+        "Kelola air irigasi dengan baik",
+        "Hindari luka pada tanaman",
+        "Sanitasi alat pertanian"
+      ],
+      "organicTips": [
+        "Aplikasi pupuk organik kaya silika",
+        "Penanaman padi varietas campuran",
+        "Penggunaan agent hayati Bacillus subtilis",
+        "Pengelolaan air dengan sistem SRI"
+      ],
+      "nonOrganicTips": [
+        "Program penyemprotan bakterisida preventif",
+        "Monitoring pH air irigasi (6.5-7.0)",
+        "Penggunaan slow release fertilizer",
+        "Sistem early warning berbasis cuaca"
+      ]
+    },
+    "Brownspot": {
+      "id": "rice-brown-spot",
+      "name": "Brown Spot (Bercak Coklat)",
+      "scientificName": "Bipolaris oryzae",
+      "type": "Jamur",
+      "severity": "Sedang",
+      "icon": "🟫",
+      "description": "Penyakit jamur yang menyerang daun, batang, dan gabah padi, terutama pada tanaman yang kekurangan nutrisi.",
+      "images": [
+        "images/rice-brown-spot-1.jpg",
+        "images/rice-brown-spot-2.jpg",
+        "images/rice-brown-spot-3.jpg"
+      ],
+      "symptoms": [
+        "Bercak bulat hingga oval berwarna coklat pada daun",
+        "Bercak berukuran 0.5-2 cm dengan tepi gelap",
+        "Bercak pada gabah menyebabkan beras hitam",
+        "Daun menguning dan mengering prematur",
+        "Jumlah gabah isi berkurang",
+        "Kualitas beras menurun"
+      ],
+      "causes": [
+        "Kekurangan nutrisi terutama nitrogen dan kalium",
+        "Kelembaban tinggi >85%",
+        "Suhu 25-30°C",
+        "Tanah dengan drainase buruk",
+        "Tanaman stres karena kekeringan"
+      ],
+      "treatment": {
+        "immediate": [
+          "Aplikasi fungisida berbahan aktif carbendazim",
+          "Perbaiki status nutrisi tanaman",
+          "Atur pengairan yang tepat",
+          "Semprot pupuk daun lengkap"
+        ],
+        "pesticides": [
+          {
+            "name": "Benlate 50 WP",
+            "activeIngredient": "Benomil",
+            "dosage": "1-2 g/liter air",
+            "interval": "10-14 hari",
+            "type": "Sistemik"
+          },
+          {
+            "name": "Dithane M-45",
+            "activeIngredient": "Mankozeb",
+            "dosage": "2-3 g/liter air",
+            "interval": "7-10 hari",
+            "type": "Kontak"
+          },
+          {
+            "name": "Hinosan 50 EC",
+            "activeIngredient": "Edifenphos",
+            "dosage": "2 ml/liter air",
+            "interval": "14 hari",
+            "type": "Sistemik"
+          }
+        ],
+        "organic": [
+          "Ekstrak daun kemangi",
+          "Larutan kapur sirih 1%",
+          "Aplikasi Trichoderma viride",
+          "Kompos teh dengan molase"
+        ]
+      },
+      "prevention": [
+        "Pemupukan berimbang NPK",
+        "Gunakan varietas tahan seperti Memberamo",
+        "Kelola air irigasi optimal",
+        "Bersihkan sisa jerami setelah panen",
+        "Rotasi dengan tanaman legume"
+      ],
+      "organicTips": [
+        "Aplikasi pupuk kandang matang",
+        "Penggunaan abu sekam sebagai sumber kalium",
+        "Penanaman Azolla untuk nitrogen organik",
+        "Biochar untuk memperbaiki struktur tanah"
+      ],
+      "nonOrganicTips": [
+        "Analisis tanah berkala untuk status hara",
+        "Aplikasi pupuk slow release",
+        "Monitoring dengan soil test kit",
+        "Penggunaan growth regulator untuk ketahanan"
+      ]
+    },
+    "Leafsmut": {
+      "id": "rice-leaf-smut",
+      "name": "Leaf Smut (Jelaga Daun)",
+      "scientificName": "Entyloma oryzae",
+      "type": "Jamur",
+      "severity": "Rendah",
+      "icon": "⚫",
+      "description": "Penyakit jamur yang menyerang daun padi dengan gejala bercak hitam seperti jelaga, umumnya tidak berbahaya.",
+      "images": [
+        "images/rice-leaf-smut-1.jpg",
+        "images/rice-leaf-smut-2.jpg",
+        "images/rice-leaf-smut-3.jpg"
+      ],
+      "symptoms": [
+        "Bercak hitam kecil seperti jelaga pada daun",
+        "Bercak mudah terhapus ketika disentuh",
+        "Daun tampak kotor dan berdebu",
+        "Pertumbuhan tanaman sedikit terhambat",
+        "Jarang menyebabkan kerusakan serius",
+        "Lebih banyak pada musim hujan"
+      ],
+      "causes": [
+        "Kelembaban sangat tinggi >90%",
+        "Suhu 20-28°C",
+        "Sirkulasi udara buruk",
+        "Genangan air berkepanjangan",
+        "Tanaman yang terlalu rimbun"
+      ],
+      "treatment": {
+        "immediate": [
+          "Perbaiki drainase dan sirkulasi udara",
+          "Kurangi kelembaban dengan pengaturan air",
+          "Aplikasi fungisida ringan bila perlu",
+          "Pangkas daun yang terinfeksi berat"
+        ],
+        "pesticides": [
+          {
+            "name": "Dithane M-45",
+            "activeIngredient": "Mankozeb",
+            "dosage": "2 g/liter air",
+            "interval": "14 hari",
+            "type": "Kontak"
+          },
+          {
+            "name": "Antracol 70 WP",
+            "activeIngredient": "Propineb",
+            "dosage": "2-3 g/liter air",
+            "interval": "10-14 hari",
+            "type": "Kontak"
+          }
+        ],
+        "organic": [
+          "Semprot larutan baking soda 0.5%",
+          "Ekstrak daun sirih",
+          "Aplikasi mikroorganisme bermanfaat",
+          "Pengaturan air dengan sistem intermittent"
+        ]
+      },
+      "prevention": [
+        "Atur jarak tanam yang optimal",
+        "Kelola air irigasi tidak tergenang terus",
+        "Bersihkan gulma yang rimbun",
+        "Gunakan varietas dengan kanopi terbuka",
+        "Monitor kelembaban udara"
+      ],
+      "organicTips": [
+        "Tanam varietas padi lokal adaptif",
+        "Penggunaan mulsa jerami untuk drainase",
+        "Aplikasi EM4 untuk keseimbangan mikroba",
+        "Sistem tanam jajar legowo untuk sirkulasi"
+      ],
+      "nonOrganicTips": [
+        "Monitoring cuaca dengan weather station",
+        "Penggunaan surfaktan untuk mengurangi kelembaban daun",
+        "Aplikasi silicon untuk memperkuat kutikula daun",
+        "Sistem drainase otomatis"
+      ]
+    }
+  }
+}

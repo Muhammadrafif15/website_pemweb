@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasifikasi Penyakit Tanaman - AgriSmart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">AgriSmart</div>
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">Klasifikasi Penyakit</a></li>
+                    <li><a href="#">Alat Pertanian</a></li>
+                    <li><a href="#">Harga Pasar</a></li>
+                    <li><a href="#">Permodalan</a></li>
+                    <li><a href="#">Pemasaran</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>🔍 Klasifikasi Penyakit Tanaman</h1>
+            <p>Identifikasi penyakit tanaman jagung dan padi dengan teknologi AI TensorFlow.js</p>
+        </section>
+
+        <!-- Plant Selection -->
+        <section class="plant-selection">
+            <h2 style="color: #5D8736; margin-bottom: 20px;">Pilih Jenis Tanaman</h2>
+            <div class="plant-options">
+                <div class="plant-option" data-plant="corn" onclick="selectPlant('corn')">
+                    <div class="plant-icon">🌽</div>
+                    <h3>Jagung</h3>
+                    <p>Zea mays - Deteksi Blight, Common Rust, Gray Leaf Spot</p>
+                </div>
+                <div class="plant-option" data-plant="rice" onclick="selectPlant('rice')">
+                    <div class="plant-icon">🌾</div>
+                    <h3>Padi</h3>
+                    <p>Oryza sativa - Deteksi Bacterial Blight, Brown Spot, Leaf Smut</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Upload & Analysis Section -->
+            <div class="upload-section">
+                <h2 style="color: #5D8736; margin-bottom: 25px;">Upload Foto Tanaman</h2>
+                
+                <div class="upload-area disabled" id="uploadArea">
+                    <div class="upload-icon">📷</div>
+                    <div class="upload-text">
+                        <h3>Pilih jenis tanaman terlebih dahulu</h3>
+                        <p>Kemudian drag & drop atau klik untuk upload</p>
+                        <p>Format: JPG, PNG, WebP | Max: 5MB</p>
+                    </div>
+                    <button class="upload-button" id="uploadButton" disabled onclick="document.getElementById('fileInput').click()">
+                        Pilih Gambar
+                    </button>
+                    <input type="file" id="fileInput" class="file-input" accept="image/*">
+                </div>
+
+                <!-- Image Preview -->
+                <div class="image-preview" id="imagePreview">
+                    <img id="previewImg" class="preview-image" alt="Preview">
+                    <button class="upload-button" style="margin-top: 15px;" onclick="analyzeImage()">
+                        🔍 Analisis Penyakit
+                    </button>
+                </div>
+
+                <!-- Analysis Results -->
+                <div class="analysis-section" id="analysisSection">
+                    <div class="loading" id="loadingState">
+                        <div class="loading-spinner"></div>
+                        <p>Menganalisis gambar dengan AI...</p>
+                    </div>
+                    
+                    <div id="resultsContainer" style="display: none;">
+                        <h3 style="color: #5D8736; margin-bottom: 20px;">Hasil Analisis</h3>
+                        <div class="results-grid" id="resultsGrid">
+                            <!-- Results will be populated here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="info-card">
+                    <h3>🎯 Tips Upload Gambar</h3>
+                    <ul>
+                        <li>Pastikan gambar fokus dan tidak blur</li>
+                        <li>Ambil foto di pencahayaan yang cukup</li>
+                        <li>Fokus pada daun atau bagian yang sakit</li>
+                        <li>Hindari bayangan yang berlebihan</li>
+                        <li>Gunakan resolusi minimal 150x150 px</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🌾 Tanaman yang Didukung</h3>
+                    <ul>
+                        <li>Jagung (Zea mays)</li>
+                        <li>Padi (Oryza sativa)</li>
+                    </ul>
+                </div>
+
+                <div class="info-card" id="accuracyCard">
+                    <h3>📊 Statistik Akurasi</h3>
+                    <ul id="accuracyList">
+                        <li>Pilih jenis tanaman untuk melihat akurasi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Disease Database -->
+        <section class="database-section">
+            <h2 class="section-title">📚 Database Penyakit Tanaman</h2>
+            
+            <div class="plant-filter">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="corn">Jagung</button>
+                    <button class="filter-btn" data-filter="rice">Padi</button>
+                </div>
+            </div>
+
+            <div class="disease-grid" id="diseaseGrid">
+                <!-- Disease cards will be populated by JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Disease Detail Modal -->
+    <div class="modal" id="diseaseModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeDiseaseModal()">&times;</button>
+            <div id="modalContent">
+                <!-- Modal content will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Disease Detail Page -->
+    <div class="modal" id="diseaseDetailModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeDiseaseDetailModal()">&times;</button>
+            <div id="diseaseDetailContent">
+                <!-- Detailed disease content will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app-ai.js"></script>
+</body>
+</html>

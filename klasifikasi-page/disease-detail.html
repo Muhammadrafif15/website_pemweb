@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Penyakit - AgriSmart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .disease-detail-page {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .breadcrumb {
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .breadcrumb a {
+            color: #5D8736;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .disease-hero {
+            background: linear-gradient(135deg, #5D8736 0%, #809D3C 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .hero-icon {
+            font-size: 80px;
+        }
+
+        .hero-info h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero-info .scientific-name {
+            font-style: italic;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+
+        .hero-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .hero-tag {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 16px;
+            border: 2px solid #A9C46C;
+            overflow: hidden;
+        }
+
+        .content-tabs {
+            display: flex;
+            background: #F4FFC3;
+            border-bottom: 2px solid #A9C46C;
+        }
+
+        .content-tab {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-weight: 500;
+            color: #5D8736;
+            transition: all 0.3s ease;
+        }
+
+        .content-tab:hover {
+            background: rgba(93, 135, 54, 0.1);
+        }
+
+        .content-tab.active {
+            background: #5D8736;
+            color: white;
+        }
+
+        .tab-panel {
+            padding: 30px;
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        .sidebar-detail {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .info-box {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            border: 2px solid #A9C46C;
+        }
+
+        .info-box h3 {
+            color: #5D8736;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .severity-indicator {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .severity-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .severity-high .severity-dot {
+            background: #ff4444;
+        }
+
+        .severity-medium .severity-dot {
+            background: #ffaa44;
+        }
+
+        .severity-low .severity-dot {
+            background: #44ff44;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .gallery-image {
+            height: 150px;
+            background: linear-gradient(45deg, #F4FFC3, #A9C46C);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+            border: 2px solid #A9C46C;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .quick-facts {
+            display: grid;
+            gap: 10px;
+        }
+
+        .fact-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .fact-label {
+            font-weight: 500;
+            color: #5D8736;
+        }
+
+        .related-diseases {
+            margin-top: 40px;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .related-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #A9C46C;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .related-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .content-tabs {
+                flex-direction: column;
+            }
+            
+            .image-gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">AgriSmart</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Klasifikasi Penyakit</a></li>
+                    <li><a href="#">Alat Pertanian</a></li>
+                    <li><a href="#">Harga Pasar</a></li>
+                    <li><a href="#">Permodalan</a></li>
+                    <li><a href="#">Pemasaran</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="disease-detail-page">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="index.html">Beranda</a> > <a href="index.html#database">Database Penyakit</a> > <span id="currentDisease">Detail Penyakit</span>
+        </div>
+
+        <!-- Disease Hero Section -->
+        <section class="disease-hero">
+            <div class="hero-content">
+                <div class="hero-icon" id="diseaseIcon">🍃</div>
+                <div class="hero-info">
+                    <h1 id="diseaseName">Nama Penyakit</h1>
+                    <div class="scientific-name" id="scientificName">Nama Ilmiah</div>
+                    <div class="hero-tags" id="heroTags">
+                        <!-- Tags will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <div class="content-grid">
+            <div class="main-content">
+                <div class="content-tabs">
+                    <button class="content-tab active" onclick="showContentTab('overview')">Gambaran Umum</button>
+                    <button class="content-tab" onclick="showContentTab('symptoms')">Gejala</button>
+                    <button class="content-tab" onclick="showContentTab('treatment')">Penanganan</button>
+                    <button class="content-tab" onclick="showContentTab('prevention')">Pencegahan</button>
+                </div>
+
+                <div class="tab-panel active" id="overview-panel">
+                    <h3>Deskripsi Penyakit</h3>
+                    <p id="diseaseDescription">Deskripsi akan dimuat di sini...</p>
+                    
+                    <h3 style="margin-top: 30px;">Galeri Gambar</h3>
+                    <div class="image-gallery" id="imageGallery">
+                        <!-- Images will be populated here -->
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="symptoms-panel">
+                    <h3>Gejala yang Terlihat</h3>
+                    <ul id="symptomsList">
+                        <!-- Symptoms will be populated here -->
+                    </ul>
+                    
+                    <h3 style="margin-top: 30px;">Penyebab</h3>
+                    <ul id="causesList">
+                        <!-- Causes will be populated here -->
+                    </ul>
+                </div>
+
+                <div class="tab-panel" id="treatment-panel">
+                    <h3>Penanganan Segera</h3>
+                    <ul id="immediateList">
+                        <!-- Immediate treatment will be populated here -->
+                    </ul>
+                    
+                    <h3 style="margin-top: 30px;">Rekomendasi Pestisida</h3>
+                    <div id="pesticideList">
+                        <!-- Pesticides will be populated here -->
+                    </div>
+                    
+                    <h3 style="margin-top: 30px;">Penanganan Organik</h3>
+                    <ul id="organicList">
+                        <!-- Organic treatment will be populated here -->
+                    </ul>
+                </div>
+
+                <div class="tab-panel" id="prevention-panel">
+                    <h3>Metode Pencegahan</h3>
+                    <ul id="preventionList">
+                        <!-- Prevention methods will be populated here -->
+                    </ul>
+                    
+                    <h3 style="margin-top: 30px;">Tips Organik</h3>
+                    <ul id="organicTipsList">
+                        <!-- Organic tips will be populated here -->
+                    </ul>
+                    
+                    <h3 style="margin-top: 30px;">Tips Non-Organik</h3>
+                    <ul id="nonOrganicTipsList">
+                        <!-- Non-organic tips will be populated here -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-detail">
+                <div class="info-box">
+                    <h3>Tingkat Keparahan</h3>
+                    <div class="severity-indicator" id="severityIndicator">
+                        <div class="severity-dot"></div>
+                        <span id="severityText">Tinggi</span>
+                    </div>
+                    <p id="severityDescription">Penyakit dengan tingkat keparahan tinggi memerlukan penanganan segera.</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Fakta Singkat</h3>
+                    <div class="quick-facts" id="quickFacts">
+                        <!-- Quick facts will be populated here -->
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h3>Kontak Ahli</h3>
+                    <p>Butuh bantuan lebih lanjut?</p>
+                    <button class="upload-button" style="width: 100%; margin-top: 10px;">
+                        📞 Hubungi Penyuluh
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Diseases -->
+        <section class="related-diseases">
+            <h2 class="section-title">Penyakit Terkait</h2>
+            <div class="related-grid" id="relatedGrid">
+                <!-- Related diseases will be populated here -->
+            </div>
+        </section>
+    </div>
+
+    <script>
+        let diseaseData = {};
+        let currentDiseaseId = '';
+
+        // Load disease data and initialize page
+        async function loadDiseaseData() {
+            try {
+                const response = await fetch('disease-data.json');
+                diseaseData = await response.json();
+                initializePage();
+            } catch (error) {
+                console.error('Error loading disease data:', error);
+            }
+        }
+
+        // Initialize page based on URL parameters
+        function initializePage() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const plant = urlParams.get('plant');
+            const disease = urlParams.get('disease');
+            
+            if (plant && disease && diseaseData[plant] && diseaseData[plant][disease]) {
+                currentDiseaseId = diseaseData[plant][disease].id;
+                populatePageContent(diseaseData[plant][disease], plant);
+                populateRelatedDiseases(plant, disease);
+            } else {
+                // Default to first disease if no valid parameters
+                const firstPlant = Object.keys(diseaseData)[0];
+                const firstDisease = Object.keys(diseaseData[firstPlant])[0];
+                populatePageContent(diseaseData[firstPlant][firstDisease], firstPlant);
+                populateRelatedDiseases(firstPlant, firstDisease);
+            }
+        }
+
+        // Populate page content with disease data
+        function populatePageContent(disease, plantType) {
+            // Hero section
+            document.getElementById('diseaseIcon').textContent = disease.icon;
+            document.getElementById('diseaseName').textContent = disease.name;
+            document.getElementById('scientificName').textContent = disease.scientificName;
+            document.getElementById('currentDisease').textContent = disease.name;
+            
+            // Hero tags
+            const heroTags = document.getElementById('heroTags');
+            heroTags.innerHTML = `
+                <span class="hero-tag">${disease.type}</span>
+                <span class="hero-tag">${disease.severity}</span>
+                <span class="hero-tag">${plantType === 'corn' ? 'Jagung' : 'Padi'}</span>
+            `;
+
+            // Overview panel
+            document.getElementById('diseaseDescription').textContent = disease.description;
+            
+            // Image gallery
+            const imageGallery = document.getElementById('imageGallery');
+            const images = disease.images || [];
+            if (images.length > 0) {
+                imageGallery.innerHTML = images.map((img, index) => `
+                    <div class="gallery-image" onclick="openImageModal('${img}')">
+                        Gambar ${index + 1}<br>
+                        <small>${disease.name}</small>
+                    </div>
+                `).join('');
+            } else {
+                imageGallery.innerHTML = `
+                    <div class="gallery-image">Contoh Gejala<br><small>Gambar akan segera tersedia</small></div>
+                    <div class="gallery-image">Stadium Lanjut<br><small>Gambar akan segera tersedia</small></div>
+                    <div class="gallery-image">Daun Terinfeksi<br><small>Gambar akan segera tersedia</small></div>
+                `;
+            }
+
+            // Symptoms and causes
+            populateList('symptomsList', disease.symptoms);
+            populateList('causesList', disease.causes);
+
+            // Treatment
+            populateList('immediateList', disease.treatment?.immediate);
+            populatePesticides(disease.treatment?.pesticides);
+            populateList('organicList', disease.treatment?.organic);
+
+            // Prevention and tips
+            populateList('preventionList', disease.prevention);
+            populateList('organicTipsList', disease.organicTips);
+            populateList('nonOrganicTipsList', disease.nonOrganicTips);
+
+            // Sidebar
+            populateSeverityInfo(disease.severity);
+            populateQuickFacts(disease, plantType);
+        }
+
+        // Helper function to populate lists
+        function populateList(elementId, items) {
+            const element = document.getElementById(elementId);
+            if (items && items.length > 0) {
+                element.innerHTML = items.map(item => `<li>${item}</li>`).join('');
+            } else {
+                element.innerHTML = '<li>Informasi akan segera tersedia</li>';
+            }
+        }
+
+        // Populate pesticides with detailed information
+        function populatePesticides(pesticides) {
+            const element = document.getElementById('pesticideList');
+            if (pesticides && pesticides.length > 0) {
+                element.innerHTML = pesticides.map(pesticide => `
+                    <div class="pesticide-item" style="margin-bottom: 15px; padding: 15px; background: #f9f9f9; border-radius: 8px; border-left: 4px solid #5D8736;">
+                        <div class="pesticide-name" style="font-weight: bold; color: #5D8736; margin-bottom: 5px;">${pesticide.name}</div>
+                        <div class="pesticide-details" style="font-size: 14px; color: #666;">
+                            <strong>Bahan Aktif:</strong> ${pesticide.activeIngredient}<br>
+                            <strong>Dosis:</strong> ${pesticide.dosage}<br>
+                            <strong>Interval:</strong> ${pesticide.interval}<br>
+                            <strong>Jenis:</strong> ${pesticide.type}
+                        </div>
+                    </div>
+                `).join('');
+            } else {
+                element.innerHTML = '<div class="pesticide-item">Rekomendasi pestisida akan segera tersedia</div>';
+            }
+        }
+
+        // Populate severity information
+        function populateSeverityInfo(severity) {
+            const indicator = document.getElementById('severityIndicator');
+            const text = document.getElementById('severityText');
+            const description = document.getElementById('severityDescription');
+            
+            indicator.className = `severity-indicator severity-${severity.toLowerCase()}`;
+            text.textContent = severity;
+            
+            const descriptions = {
+                'Tinggi': 'Penyakit dengan tingkat keparahan tinggi memerlukan penanganan segera dan intensif.',
+                'Sedang': 'Penyakit dengan tingkat keparahan sedang memerlukan monitoring dan penanganan rutin.',
+                'Rendah': 'Penyakit dengan tingkat keparahan rendah dapat ditangani dengan pencegahan standar.'
+            };
+            
+            description.textContent = descriptions[severity] || descriptions['Tinggi'];
+        }
+
+        // Populate quick facts
+        function populateQuickFacts(disease, plantType) {
+            const quickFacts = document.getElementById('quickFacts');
+            quickFacts.innerHTML = `
+                <div class="fact-item">
+                    <span class="fact-label">Jenis Patogen:</span>
+                    <span>${disease.type}</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Tanaman:</span>
+                    <span>${plantType === 'corn' ? 'Jagung' : 'Padi'}</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Tingkat Bahaya:</span>
+                    <span>${disease.severity}</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Musim Rentan:</span>
+                    <span>Musim Hujan</span>
+                </div>
+            `;
+        }
+
+        // Populate related diseases
+        function populateRelatedDiseases(currentPlant, currentDisease) {
+            const relatedGrid = document.getElementById('relatedGrid');
+            let relatedCards = '';
+            
+            // Get diseases from the same plant (excluding current)
+            Object.keys(diseaseData[currentPlant]).forEach(diseaseKey => {
+                if (diseaseKey !== currentDisease) {
+                    const disease = diseaseData[currentPlant][diseaseKey];
+                    relatedCards += createRelatedCard(disease, currentPlant, diseaseKey);
+                }
+            });
+            
+            // Add one disease from other plant
+            const otherPlant = currentPlant === 'corn' ? 'rice' : 'corn';
+            const otherDiseaseKey = Object.keys(diseaseData[otherPlant])[0];
+            const otherDisease = diseaseData[otherPlant][otherDiseaseKey];
+            relatedCards += createRelatedCard(otherDisease, otherPlant, otherDiseaseKey);
+            
+            relatedGrid.innerHTML = relatedCards;
+        }
+
+        // Create related disease card
+        function createRelatedCard(disease, plantType, diseaseKey) {
+            return `
+                <div class="related-card" onclick="navigateToDisease('${plantType}', '${diseaseKey}')">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 10px;">
+                        <div style="font-size: 24px;">${disease.icon}</div>
+                        <div>
+                            <div style="font-weight: bold; color: #5D8736;">${disease.name}</div>
+                            <div style="font-size: 12px; color: #666;">${plantType === 'corn' ? 'Jagung' : 'Padi'}</div>
+                        </div>
+                    </div>
+                    <p style="font-size: 14px; color: #666; line-height: 1.4;">${disease.description.substring(0, 100)}...</p>
+                </div>
+            `;
+        }
+
+        // Tab functionality
+        function showContentTab(tabName) {
+            // Remove active class from all tabs and panels
+            document.querySelectorAll('.content-tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+            
+            // Add active class to selected tab and panel
+            event.target.classList.add('active');
+            document.getElementById(`${tabName}-panel`).classList.add('active');
+        }
+
+        // Navigation functions
+        function navigateToDisease(plantType, diseaseKey) {
+            window.location.href = `disease-detail.html?plant=${plantType}&disease=${diseaseKey}`;
+        }
+
+        function openImageModal(imageSrc) {
+            // This would open a modal with the full-size image
+            alert('Image modal would open here: ' + imageSrc);
+        }
+
+        // Initialize page when DOM is loaded
+        document.addEventListener('DOMContentLoaded', loadDiseaseData);
+    </script>
+</body>
+</html>
