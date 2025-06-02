@@ -1,0 +1,52 @@
+{
+  "categories": [
+    {
+      "id": "all",
+      "icon": "🔧",
+      "name": "Semua Alat",
+      "count": 124
+    },
+    {
+      "id": "hand-tools",
+      "icon": "✋",
+      "name": "Alat Tangan",
+      "count": 45
+    },
+    {
+      "id": "machinery",
+      "icon": "⚙️",
+      "name": "Mesin Pertanian",
+      "count": 28
+    },
+    {
+      "id": "irrigation",
+      "icon": "💧",
+      "name": "Irigasi",
+      "count": 31
+    },
+    {
+      "id": "harvest",
+      "icon": "🌾",
+      "name": "Panen",
+      "count": 20
+    },
+    {
+      "id": "soil-prep",
+      "icon": "🌱",
+      "name": "Pengolahan Tanah",
+      "count": 18
+    },
+    {
+      "id": "planting",
+      "icon": "🌿",
+      "name": "Penanaman",
+      "count": 15
+    },
+    {
+      "id": "fertilizing",
+      "icon": "🧪",
+      "name": "Pemupukan",
+      "count": 12
+    }
+  ]
+}

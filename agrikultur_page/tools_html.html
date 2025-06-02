@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Alat Pertanian - AgriSmart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tools_styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">AgriSmart</div>
+                <ul class="nav-menu">
+                    <li><a href="#">Klasifikasi Penyakit</a></li>
+                    <li><a href="#" class="active">Alat Pertanian</a></li>
+                    <li><a href="#">Harga Pasar</a></li>
+                    <li><a href="#">Permodalan</a></li>
+                    <li><a href="#">Pemasaran</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>🛠️ Katalog Alat Pertanian</h1>
+            <p>Informasi lengkap tentang alat pertanian tradisional dan modern dengan perbandingan harga</p>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories-section">
+            <h2 class="section-title">Kategori Alat Pertanian</h2>
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="filter-group">
+                <label>Cari Alat:</label>
+                <input type="text" class="filter-input" placeholder="Nama alat..." id="searchInput">
+            </div>
+            <div class="filter-group">
+                <label>Jenis Tanaman:</label>
+                <select class="filter-select" id="cropFilter">
+                    <option value="">Semua Tanaman</option>
+                    <option value="padi">Padi</option>
+                    <option value="jagung">Jagung</option>
+                    <option value="kedelai">Kedelai</option>
+                    <option value="sayuran">Sayuran</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Rentang Harga:</label>
+                <select class="filter-select" id="priceFilter">
+                    <option value="">Semua Harga</option>
+                    <option value="0-100000">< Rp 100.000</option>
+                    <option value="100000-500000">Rp 100.000 - 500.000</option>
+                    <option value="500000-2000000">Rp 500.000 - 2.000.000</option>
+                    <option value="2000000+"> > Rp 2.000.000</option>
+                </select>
+            </div>
+            <button class="search-button" onclick="applyFilters()">🔍 Filter</button>
+        </section>
+
+        <!-- Tools Grid -->
+        <section class="tools-grid" id="toolsGrid">
+            <!-- Tool cards will be populated by JavaScript -->
+        </section>
+
+        <!-- Tutorial Section -->
+        <section class="tutorial-section">
+            <h2 class="section-title">📖 Panduan Penggunaan & Pemeliharaan</h2>
+            <div class="tutorial-grid" id="tutorialGrid">
+                <!-- Tutorial cards will be populated by JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Tool Detail Modal -->
+    <div class="modal" id="toolModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Detail Alat Pertanian</h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="tools_script.js"></script>
+</body>
+</html>

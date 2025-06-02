@@ -1,0 +1,304 @@
+{
+  "tools": [
+    {
+      "id": "cangkul",
+      "name": "Cangkul Tradisional",
+      "category": "hand-tools",
+      "icon": "🪓",
+      "badge": "Populer",
+      "description": "Alat pertanian dasar untuk menggemburkan tanah dan membuat alur tanam. Tersedia berbagai ukuran sesuai kebutuhan.",
+      "specs": {
+        "Material": "Besi + Kayu",
+        "Berat": "1.2 - 1.8 kg",
+        "Lebar Mata": "15 - 20 cm",
+        "Panjang Gagang": "80 - 120 cm"
+      },
+      "priceRange": "Rp 45.000 - 85.000",
+      "priceMin": 45000,
+      "priceMax": 85000,
+      "crops": ["padi", "jagung", "sayuran"],
+      "detailedSpecs": {
+        "Material Mata": "Besi Carbon Steel",
+        "Material Gagang": "Kayu Jati/Sono",
+        "Berat Total": "1.2 - 1.8 kg",
+        "Lebar Mata": "15 - 20 cm",
+        "Panjang Gagang": "80 - 120 cm",
+        "Ketebalan Mata": "3 - 4 mm"
+      },
+      "brands": [
+        { "name": "Kapak Garuda", "price": "Rp 45.000", "rating": "4.5/5" },
+        { "name": "Zebra Tools", "price": "Rp 55.000", "rating": "4.3/5" },
+        { "name": "Krisbow", "price": "Rp 65.000", "rating": "4.2/5" },
+        { "name": "Tekiro", "price": "Rp 75.000", "rating": "4.4/5" }
+      ],
+      "usage": [
+        "Gemburkan tanah sebelum tanam",
+        "Buat alur atau lubang tanam",
+        "Pembersihan gulma di sekitar tanaman",
+        "Pembuatan saluran drainase kecil"
+      ],
+      "maintenance": [
+        "Bersihkan dari tanah setelah digunakan",
+        "Keringkan sebelum disimpan",
+        "Asah mata cangkul secara berkala",
+        "Oleskan minyak tipis untuk mencegah karat"
+      ]
+    },
+    {
+      "id": "traktor",
+      "name": "Traktor Mini",
+      "category": "machinery",
+      "icon": "🚜",
+      "badge": "Premium",
+      "description": "Traktor kompak untuk lahan sempit, ideal untuk petani kecil. Dilengkapi berbagai attachment untuk berbagai keperluan.",
+      "specs": {
+        "Tenaga": "15 - 25 HP",
+        "Transmisi": "Manual/HST",
+        "Lebar Kerja": "120 - 150 cm",
+        "Konsumsi BBM": "2-3 L/jam"
+      },
+      "priceRange": "Rp 45.000.000 - 85.000.000",
+      "priceMin": 45000000,
+      "priceMax": 85000000,
+      "crops": ["padi", "jagung", "kedelai"],
+      "detailedSpecs": {
+        "Tenaga Mesin": "15 - 25 HP",
+        "Jenis Mesin": "4-stroke Diesel",
+        "Transmisi": "Manual 8+2 / HST",
+        "PTO Speed": "540 RPM",
+        "Lebar Kerja": "120 - 150 cm",
+        "Ground Clearance": "25 cm"
+      },
+      "brands": [
+        { "name": "Kubota", "price": "Rp 75.000.000", "rating": "4.8/5" },
+        { "name": "Yanmar", "price": "Rp 65.000.000", "rating": "4.6/5" },
+        { "name": "Iseki", "price": "Rp 55.000.000", "rating": "4.4/5" },
+        { "name": "Quick", "price": "Rp 45.000.000", "rating": "4.2/5" }
+      ],
+      "usage": [
+        "Pengolahan tanah dengan rotary",
+        "Penanaman dengan seeder",
+        "Penyemprotan dengan boom sprayer",
+        "Pengangkutan hasil panen"
+      ],
+      "maintenance": [
+        "Service rutin setiap 50 jam operasi",
+        "Ganti oli mesin dan transmisi berkala",
+        "Cek tekanan ban dan alignment",
+        "Bersihkan filter udara dan bahan bakar"
+      ]
+    },
+    {
+      "id": "pompa-air",
+      "name": "Pompa Air Centrifugal",
+      "category": "irrigation",
+      "icon": "💧",
+      "badge": "Hemat Energi",
+      "description": "Pompa air untuk sistem irigasi dengan daya hisap tinggi. Cocok untuk lahan dengan sumber air terbatas.",
+      "specs": {
+        "Daya": "3 - 7.5 HP",
+        "Debit": "500-1500 L/min",
+        "Head Max": "25 - 40 m",
+        "Inlet/Outlet": "3-4 inch"
+      },
+      "priceRange": "Rp 2.500.000 - 8.500.000",
+      "priceMin": 2500000,
+      "priceMax": 8500000,
+      "crops": ["padi", "sayuran"],
+      "detailedSpecs": {
+        "Daya Motor": "3 - 7.5 HP",
+        "Jenis Motor": "Electric/Diesel",
+        "Debit Air": "500-1500 L/min",
+        "Head Maximum": "25 - 40 m",
+        "Ukuran Inlet": "3-4 inch",
+        "Ukuran Outlet": "2-3 inch"
+      },
+      "brands": [
+        { "name": "Grundfos", "price": "Rp 7.500.000", "rating": "4.7/5" },
+        { "name": "Shimizu", "price": "Rp 5.200.000", "rating": "4.4/5" },
+        { "name": "Sanyo", "price": "Rp 4.800.000", "rating": "4.3/5" },
+        { "name": "Franklin", "price": "Rp 3.500.000", "rating": "4.1/5" }
+      ],
+      "usage": [
+        "Irigasi lahan sawah dan ladang",
+        "Pengisian tanki air pertanian",
+        "Sistem sprinkler otomatis",
+        "Drainase lahan berair"
+      ],
+      "maintenance": [
+        "Periksa impeller dan housing rutin",
+        "Bersihkan filter hisap berkala",
+        "Ganti oli motor sesuai jadwal",
+        "Cek seal dan bearing"
+      ]
+    },
+    {
+      "id": "mesin-panen",
+      "name": "Combine Harvester Mini",
+      "category": "harvest",
+      "icon": "🌾",
+      "badge": "Efisien",
+      "description": "Mesin panen serbaguna untuk padi dan jagung. Dapat memotong, merontokkan, dan membersihkan hasil panen dalam satu proses.",
+      "specs": {
+        "Lebar Potong": "120 cm",
+        "Kapasitas": "0.5-1 ha/jam",
+        "Engine": "35 HP Diesel",
+        "Tangki Biji": "500 kg"
+      },
+      "priceRange": "Rp 125.000.000 - 185.000.000",
+      "priceMin": 125000000,
+      "priceMax": 185000000,
+      "crops": ["padi", "jagung"],
+      "detailedSpecs": {
+        "Lebar Potong": "120 cm",
+        "Kapasitas Kerja": "0.5-1 ha/jam",
+        "Engine Power": "35 HP Diesel",
+        "Kapasitas Tangki": "500 kg",
+        "Tinggi Potong": "5-50 cm",
+        "Sistem Drive": "4WD"
+      },
+      "brands": [
+        { "name": "Yanmar", "price": "Rp 175.000.000", "rating": "4.8/5" },
+        { "name": "Kubota", "price": "Rp 165.000.000", "rating": "4.7/5" },
+        { "name": "Quick", "price": "Rp 145.000.000", "rating": "4.5/5" },
+        { "name": "Iseki", "price": "Rp 135.000.000", "rating": "4.4/5" }
+      ],
+      "usage": [
+        "Panen padi dengan efisiensi tinggi",
+        "Panen jagung pipil langsung",
+        "Memisahkan biji dari jerami",
+        "Operasi di lahan sawah dan ladang"
+      ],
+      "maintenance": [
+        "Bersihkan saringan dan filter",
+        "Lumasi bearing dan gear",
+        "Periksa belt dan chain",
+        "Service engine sesuai jadwal"
+      ]
+    },
+    {
+      "id": "sabit",
+      "name": "Sabit Bergerigi",
+      "category": "hand-tools",
+      "icon": "🔪",
+      "badge": "Tradisional",
+      "description": "Alat pemanen tradisional dengan mata bergerigi untuk memotong rumput dan tanaman kecil dengan lebih efisien.",
+      "specs": {
+        "Panjang Mata": "25 - 35 cm",
+        "Material": "Carbon Steel",
+        "Gagang": "Kayu Keras",
+        "Berat": "0.5 - 0.8 kg"
+      },
+      "priceRange": "Rp 25.000 - 65.000",
+      "priceMin": 25000,
+      "priceMax": 65000,
+      "crops": ["padi", "sayuran"],
+      "detailedSpecs": {
+        "Panjang Mata": "25 - 35 cm",
+        "Material Mata": "Carbon Steel HRC 52-58",
+        "Jenis Gerigi": "Triangle cut",
+        "Material Gagang": "Kayu Sono/Jati",
+        "Panjang Gagang": "30-40 cm",
+        "Finishing": "Chrome plated"
+      },
+      "brands": [
+        { "name": "Krisbow", "price": "Rp 45.000", "rating": "4.3/5" },
+        { "name": "Kapak Garuda", "price": "Rp 35.000", "rating": "4.2/5" },
+        { "name": "Tekiro", "price": "Rp 55.000", "rating": "4.4/5" },
+        { "name": "Stanley", "price": "Rp 65.000", "rating": "4.5/5" }
+      ],
+      "usage": [
+        "Panen padi secara manual",
+        "Potong rumput dan gulma",
+        "Pembersihan area tanam",
+        "Harvest sayuran daun"
+      ],
+      "maintenance": [
+        "Asah mata sabit secara berkala",
+        "Bersihkan dari getah dan kotoran",
+        "Simpan dalam tempat kering",
+        "Oleskan minyak anti karat"
+      ]
+    },
+    {
+      "id": "sprayer",
+      "name": "Power Sprayer",
+      "category": "machinery",
+      "icon": "🧴",
+      "badge": "Modern",
+      "description": "Alat semprot bertenaga untuk aplikasi pestisida dan pupuk cair. Dilengkapi dengan tangki dan selang panjang.",
+      "specs": {
+        "Kapasitas Tangki": "16 - 25 Liter",
+        "Tekanan": "20 - 40 bar",
+        "Jangkauan": "8 - 12 m",
+        "Engine": "2-stroke 26cc"
+      },
+      "priceRange": "Rp 1.200.000 - 3.500.000",
+      "priceMin": 1200000,
+      "priceMax": 3500000,
+      "crops": ["padi", "jagung", "sayuran"],
+      "detailedSpecs": {
+        "Kapasitas Tangki": "16 - 25 Liter",
+        "Tekanan Kerja": "20 - 40 bar",
+        "Jangkauan Semprot": "8 - 12 m",
+        "Engine Type": "2-stroke 26cc",
+        "Berat": "7-10 kg",
+        "Panjang Selang": "5-7 m"
+      },
+      "brands": [
+        { "name": "Solo", "price": "Rp 2.800.000", "rating": "4.6/5" },
+        { "name": "Jacto", "price": "Rp 3.200.000", "rating": "4.7/5" },
+        { "name": "Tanika", "price": "Rp 1.800.000", "rating": "4.3/5" },
+        { "name": "Maruyama", "price": "Rp 3.500.000", "rating": "4.8/5" }
+      ],
+      "usage": [
+        "Aplikasi pestisida dan herbisida",
+        "Penyemprotan pupuk cair",
+        "Disinfeksi area pertanian",
+        "Irigasi untuk tanaman hias"
+      ],
+      "maintenance": [
+        "Bersihkan tangki setelah penggunaan",
+        "Ganti spark plug berkala",
+        "Periksa filter udara",
+        "Service engine sesuai jadwal"
+      ]
+    },
+    {
+      "id": "cultivator",
+      "name": "Hand Cultivator",
+      "category": "hand-tools",
+      "icon": "🔱",
+      "badge": "Praktis",
+      "description": "Alat penggemburan tanah manual dengan 3-5 mata untuk area sempit dan detail.",
+      "specs": {
+        "Jumlah Mata": "3-5 mata",
+        "Material": "Steel + Wood",
+        "Panjang": "30-40 cm",
+        "Berat": "0.3-0.6 kg"
+      },
+      "priceRange": "Rp 35.000 - 75.000",
+      "priceMin": 35000,
+      "priceMax": 75000,
+      "crops": ["sayuran", "bunga"]
+    },
+    {
+      "id": "rotary-tiller",
+      "name": "Rotary Tiller",
+      "category": "soil-prep",
+      "icon": "🌀",
+      "badge": "Efektif",
+      "description": "Mesin pengolah tanah dengan sistem rotary untuk menggemburkan dan mencampur tanah.",
+      "specs": {
+        "Lebar Kerja": "50-80 cm",
+        "Engine": "5-7 HP",
+        "Kedalaman": "15-25 cm",
+        "Kecepatan": "Variable"
+      },
+      "priceRange": "Rp 8.500.000 - 15.000.000",
+      "priceMin": 8500000,
+      "priceMax": 15000000,
+      "crops": ["padi", "jagung", "sayuran"]
+    }
+  ]
+}

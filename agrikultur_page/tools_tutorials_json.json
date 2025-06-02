@@ -1,0 +1,70 @@
+{
+  "tutorials": [
+    {
+      "title": "Perawatan Alat Tangan",
+      "description": "Tips membersihkan dan merawat cangkul, sabit, dan alat tangan lainnya agar tahan lama dan selalu tajam.",
+      "steps": [
+        "Bersihkan alat dari tanah dan kotoran setelah digunakan",
+        "Keringkan dengan lap atau angin-anginkan",
+        "Asah mata alat secara berkala dengan batu asah",
+        "Oleskan minyak tipis pada bagian logam",
+        "Simpan di tempat kering dan terlindung"
+      ]
+    },
+    {
+      "title": "Operasi Traktor yang Aman",
+      "description": "Panduan keselamatan kerja saat mengoperasikan traktor dan mesin pertanian lainnya di lahan.",
+      "steps": [
+        "Periksa kondisi mesin sebelum operasi",
+        "Gunakan APD lengkap (helm, sarung tangan, sepatu)",
+        "Pastikan area kerja bebas dari batu dan rintangan",
+        "Jangan mengoperasikan di lereng curam",
+        "Matikan mesin saat mengisi bahan bakar"
+      ]
+    },
+    {
+      "title": "Pemasangan Sistem Irigasi",
+      "description": "Langkah-langkah instalasi pompa air dan sistem irigasi tetes untuk efisiensi penggunaan air.",
+      "steps": [
+        "Tentukan lokasi sumber air dan area irigasi",
+        "Pasang pompa sesuai spesifikasi",
+        "Hubungkan pipa utama dan cabang",
+        "Install timer dan pressure regulator",
+        "Test sistem sebelum operasi penuh"
+      ]
+    },
+    {
+      "title": "Kalibrasi Mesin Semprot",
+      "description": "Cara mengatur dosis dan pola semprot yang tepat untuk aplikasi pestisida dan pupuk cair.",
+      "steps": [
+        "Isi tangki dengan air bersih untuk test",
+        "Atur tekanan sesuai rekomendasi",
+        "Ukur laju semprot per menit",
+        "Hitung dosis berdasarkan luas area",
+        "Test pola semprot dan adjust nozzle"
+      ]
+    },
+    {
+      "title": "Pemeliharaan Mesin Diesel",
+      "description": "Panduan service rutin untuk mesin diesel pada traktor dan combine harvester.",
+      "steps": [
+        "Ganti oli mesin setiap 100 jam operasi",
+        "Bersihkan atau ganti filter udara",
+        "Periksa dan isi air radiator",
+        "Cek tension belt dan kondisi battery",
+        "Lumasi grease point sesuai manual"
+      ]
+    },
+    {
+      "title": "Teknik Panen Manual",
+      "description": "Cara panen yang benar menggunakan sabit dan alat tangan untuk hasil optimal.",
+      "steps": [
+        "Pilih waktu panen yang tepat (pagi hari)",
+        "Gunakan sabit yang tajam dan bersih",
+        "Potong batang pada ketinggian optimal",
+        "Kumpulkan hasil dalam wadah bersih",
+        "Pisahkan langsung dari jerami/daun"
+      ]
+    }
+  ]
+}
