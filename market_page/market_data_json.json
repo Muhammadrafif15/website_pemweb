@@ -1,0 +1,139 @@
+{
+  "timeframes": [
+    { "id": "1H", "label": "1H" },
+    { "id": "1M", "label": "1M" },
+    { "id": "3M", "label": "3M" },
+    { "id": "6M", "label": "6M" },
+    { "id": "1Y", "label": "1T" }
+  ],
+  "commodities": [
+    { "id": "corn", "label": "Jagung" },
+    { "id": "rice", "label": "Beras" },
+    { "id": "soybean", "label": "Kedelai" },
+    { "id": "peanut", "label": "Kacang Tanah" },
+    { "id": "chili", "label": "Cabai" },
+    { "id": "onion", "label": "Bawang Merah" },
+    { "id": "garlic", "label": "Bawang Putih" }
+  ],
+  "priceCards": [
+    {
+      "title": "🌾 Harga Komoditas Hari Ini",
+      "items": [
+        {
+          "name": "Jagung Pipil",
+          "value": "Rp 7,200/kg",
+          "change": {
+            "type": "up",
+            "text": "↗ +Rp 220 (3.2%)"
+          }
+        },
+        {
+          "name": "Beras Premium",
+          "value": "Rp 12,500/kg",
+          "change": {
+            "type": "down",
+            "text": "↘ -Rp 230 (1.8%)"
+          }
+        },
+        {
+          "name": "Kedelai Kering",
+          "value": "Rp 9,800/kg",
+          "change": {
+            "type": "up",
+            "text": "↗ +Rp 150 (1.6%)"
+          }
+        },
+        {
+          "name": "Kacang Tanah",
+          "value": "Rp 18,500/kg",
+          "change": {
+            "type": "down",
+            "text": "↘ -Rp 300 (1.6%)"
+          }
+        },
+        {
+          "name": "Cabai Merah",
+          "value": "Rp 45,000/kg",
+          "change": {
+            "type": "up",
+            "text": "↗ +Rp 2,000 (4.7%)"
+          }
+        }
+      ]
+    },
+    {
+      "title": "🧪 Harga Pupuk & Input",
+      "items": [
+        {
+          "name": "Pupuk Urea",
+          "value": "Rp 2,800/kg",
+          "change": {
+            "type": "up",
+            "text": "↗ +Rp 135 (5.1%)"
+          }
+        },
+        {
+          "name": "NPK Phonska",
+          "value": "Rp 3,200/kg",
+          "change": {
+            "type": "up",
+            "text": "↗ +Rp 100 (3.2%)"
+          }
+        },
+        {
+          "name": "Pupuk TSP",
+          "value": "Rp 4,100/kg",
+          "change": {
+            "type": "stable",
+            "text": "→ +Rp 0 (0.0%)"
+          }
+        },
+        {
+          "name": "Pupuk KCl",
+          "value": "Rp 3,800/kg",
+          "change": {
+            "type": "up",
+            "text": "↗ +Rp 80 (2.2%)"
+          }
+        }
+      ]
+    },
+    {
+      "title": "🌱 Harga Bibit & Benih",
+      "items": [
+        {
+          "name": "Bibit Jagung Hibrida",
+          "value": "Rp 45,000/kg",
+          "change": {
+            "type": "stable",
+            "text": "→ +Rp 0 (0.0%)"
+          }
+        },
+        {
+          "name": "Benih Padi IR64",
+          "value": "Rp 12,000/kg",
+          "change": {
+            "type": "down",
+            "text": "↘ -Rp 500 (4.0%)"
+          }
+        },
+        {
+          "name": "Benih Kedelai Unggul",
+          "value": "Rp 25,000/kg",
+          "change": {
+            "type": "up",
+            "text": "↗ +Rp 500 (2.0%)"
+          }
+        },
+        {
+          "name": "Bibit Cabai",
+          "value": "Rp 150,000/kg",
+          "change": {
+            "type": "stable",
+            "text": "→ +Rp 0 (0.0%)"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "regions": [
+    {
+      "name": "Jawa Barat",
+      "commodities": [
+        { "name": "Jagung", "price": "Rp 7,100/kg" },
+        { "name": "Beras", "price": "Rp 12,300/kg" },
+        { "name": "Kedelai", "price": "Rp 9,700/kg" },
+        { "name": "Cabai", "price": "Rp 44,000/kg" }
+      ]
+    },
+    {
+      "name": "Jawa Tengah",
+      "commodities": [
+        { "name": "Jagung", "price": "Rp 7,000/kg" },
+        { "name": "Beras", "price": "Rp 12,000/kg" },
+        { "name": "Kedelai", "price": "Rp 9,500/kg" },
+        { "name": "Cabai", "price": "Rp 43,500/kg" }
+      ]
+    },
+    {
+      "name": "Jawa Timur",
+      "commodities": [
+        { "name": "Jagung", "price": "Rp 7,300/kg" },
+        { "name": "Beras", "price": "Rp 12,700/kg" },
+        { "name": "Kedelai", "price": "Rp 9,900/kg" },
+        { "name": "Cabai", "price": "Rp 46,000/kg" }
+      ]
+    },
+    {
+      "name": "Sumatera Utara",
+      "commodities": [
+        { "name": "Jagung", "price": "Rp 7,400/kg" },
+        { "name": "Beras", "price": "Rp 13,000/kg" },
+        { "name": "Kedelai", "price": "Rp 10,200/kg" },
+        { "name": "Cabai", "price": "Rp 47,500/kg" }
+      ]
+    },
+    {
+      "name": "Sulawesi Selatan",
+      "commodities": [
+        { "name": "Jagung", "price": "Rp 6,800/kg" },
+        { "name": "Beras", "price": "Rp 11,800/kg" },
+        { "name": "Kedelai", "price": "Rp 9,300/kg" },
+        { "name": "Cabai", "price": "Rp 42,000/kg" }
+      ]
+    },
+    {
+      "name": "Lampung",
+      "commodities": [
+        { "name": "Jagung", "price": "Rp 7,150/kg" },
+        { "name": "Beras", "price": "Rp 12,400/kg" },
+        { "name": "Kedelai", "price": "Rp 9,600/kg" },
+        { "name": "Cabai", "price": "Rp 45,500/kg" }
+      ]
+    }
+  ]
+}

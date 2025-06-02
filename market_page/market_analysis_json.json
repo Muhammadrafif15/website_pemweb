@@ -1,0 +1,52 @@
+{
+  "analyses": [
+    {
+      "title": "Jagung - Outlook Positif",
+      "description": "Permintaan jagung meningkat untuk pakan ternak menjelang Idul Adha. Cuaca yang mendukung juga meningkatkan kualitas hasil panen.",
+      "trend": {
+        "type": "bullish",
+        "label": "📈 BULLISH"
+      }
+    },
+    {
+      "title": "Beras - Tekanan Harga",
+      "description": "Panen raya di beberapa daerah menyebabkan oversupply sementara. Namun, kualitas beras tetap terjaga dengan kadar air optimal.",
+      "trend": {
+        "type": "bearish",
+        "label": "📉 BEARISH"
+      }
+    },
+    {
+      "title": "Pupuk - Kenaikan Musiman",
+      "description": "Memasuki musim tanam, permintaan pupuk meningkat. Distribusi pupuk bersubsidi masih terkendala di beberapa wilayah.",
+      "trend": {
+        "type": "bullish",
+        "label": "📈 BULLISH"
+      }
+    },
+    {
+      "title": "Kedelai - Stabil",
+      "description": "Harga kedelai relatif stabil dengan pasokan dari petani lokal yang cukup memadai untuk memenuhi kebutuhan industri kecil.",
+      "trend": {
+        "type": "stable",
+        "label": "→ STABIL"
+      }
+    },
+    {
+      "title": "Cabai - Volatilitas Tinggi",
+      "description": "Harga cabai fluktuatif akibat cuaca ekstrem dan serangan hama. Petani disarankan menerapkan sistem greenhouse untuk stabilitas produksi.",
+      "trend": {
+        "type": "bullish",
+        "label": "📈 VOLATILE"
+      }
+    },
+    {
+      "title": "Bawang Merah - Recovery",
+      "description": "Setelah turun drastis bulan lalu, harga bawang merah mulai pulih seiring berkurangnya pasokan dari sentra produksi utama.",
+      "trend": {
+        "type": "bullish",
+        "label": "📈 RECOVERY"
+      }
+    }
+  ]
+}

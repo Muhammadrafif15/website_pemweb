@@ -1,0 +1,64 @@
+{
+  "stats": [
+    {
+      "id": "corn",
+      "value": "Rp 7,200",
+      "label": "Jagung Pipil/kg",
+      "change": {
+        "type": "up",
+        "value": "+3.2%",
+        "text": "↗ +3.2%"
+      }
+    },
+    {
+      "id": "rice",
+      "value": "Rp 12,500",
+      "label": "Beras Premium/kg",
+      "change": {
+        "type": "down",
+        "value": "-1.8%",
+        "text": "↘ -1.8%"
+      }
+    },
+    {
+      "id": "fertilizer",
+      "value": "Rp 2,800",
+      "label": "Pupuk Urea/kg",
+      "change": {
+        "type": "up",
+        "value": "+5.1%",
+        "text": "↗ +5.1%"
+      }
+    },
+    {
+      "id": "seeds",
+      "value": "Rp 45,000",
+      "label": "Bibit Jagung/kg",
+      "change": {
+        "type": "stable",
+        "value": "0.0%",
+        "text": "→ 0.0%"
+      }
+    },
+    {
+      "id": "chili",
+      "value": "Rp 45,000",
+      "label": "Cabai Merah/kg",
+      "change": {
+        "type": "up",
+        "value": "+4.7%",
+        "text": "↗ +4.7%"
+      }
+    },
+    {
+      "id": "soybean",
+      "value": "Rp 9,800",
+      "label": "Kedelai Kering/kg",
+      "change": {
+        "type": "up",
+        "value": "+1.6%",
+        "text": "↗ +1.6%"
+      }
+    }
+  ]
+}

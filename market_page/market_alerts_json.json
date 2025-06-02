@@ -1,0 +1,49 @@
+{
+  "alerts": [
+    {
+      "id": 1,
+      "commodity": "Jagung Pipil",
+      "condition": "Alert ketika harga > Rp 7,500/kg",
+      "type": "above",
+      "value": 7500,
+      "active": true,
+      "created": "2024-06-01"
+    },
+    {
+      "id": 2,
+      "commodity": "Pupuk Urea",
+      "condition": "Alert ketika harga < Rp 2,500/kg",
+      "type": "below",
+      "value": 2500,
+      "active": true,
+      "created": "2024-06-01"
+    },
+    {
+      "id": 3,
+      "commodity": "Beras Premium",
+      "condition": "Alert ketika perubahan > 5%",
+      "type": "change",
+      "value": 5,
+      "active": true,
+      "created": "2024-06-02"
+    },
+    {
+      "id": 4,
+      "commodity": "Cabai Merah",
+      "condition": "Alert ketika harga > Rp 50,000/kg",
+      "type": "above",
+      "value": 50000,
+      "active": true,
+      "created": "2024-06-02"
+    },
+    {
+      "id": 5,
+      "commodity": "Kedelai Kering",
+      "condition": "Alert ketika harga < Rp 9,000/kg",
+      "type": "below",
+      "value": 9000,
+      "active": false,
+      "created": "2024-05-30"
+    }
+  ]
+}

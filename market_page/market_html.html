@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Harga Pasar - AgriSmart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="market_styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">AgriSmart</div>
+                <ul class="nav-menu">
+                    <li><a href="#">Klasifikasi Penyakit</a></li>
+                    <li><a href="#">Alat Pertanian</a></li>
+                    <li><a href="#" class="active">Harga Pasar</a></li>
+                    <li><a href="#">Permodalan</a></li>
+                    <li><a href="#">Pemasaran</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>📊 Informasi Harga Pasar</h1>
+            <p>Dashboard real-time harga komoditas pertanian, pupuk, dan bibit dengan analisis trend pasar</p>
+        </section>
+
+        <!-- Quick Stats -->
+        <section class="quick-stats" id="quickStats">
+            <!-- Quick stats will be populated by JavaScript -->
+        </section>
+
+        <!-- Main Dashboard -->
+        <section class="dashboard">
+            <div class="chart-container">
+                <div class="chart-header">
+                    <div class="chart-title">Trend Harga Komoditas</div>
+                    <div class="time-filter" id="timeFilter">
+                        <!-- Time filter buttons will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="chart-placeholder" id="priceChart">
+                    📈 Grafik Interaktif Harga
+                </div>
+                <div class="commodity-selector" id="commoditySelector">
+                    <!-- Commodity selector buttons will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="price-sidebar" id="priceSidebar">
+                <!-- Price cards will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Market Analysis -->
+        <section class="market-analysis">
+            <h2 class="analysis-title">📈 Analisis Pasar Minggu Ini</h2>
+            <div class="analysis-grid" id="analysisGrid">
+                <!-- Analysis cards will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Price Alerts -->
+        <section class="alerts-section">
+            <div class="alerts-header">
+                <h2 class="alerts-title">🔔 Alert Harga</h2>
+                <button class="add-alert-btn" onclick="showAddAlert()">+ Tambah Alert</button>
+            </div>
+            <div id="alertsList">
+                <!-- Alerts will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Regional Prices -->
+        <section class="regional-section">
+            <h2 class="regional-title">🗺️ Harga Regional</h2>
+            <div class="regional-grid" id="regionalGrid">
+                <!-- Regional price cards will be populated by JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Add Alert Modal -->
+    <div class="modal" id="addAlertModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Tambah Alert Harga</h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="alertForm">
+                    <div class="form-group">
+                        <label>Komoditas:</label>
+                        <select id="alertCommodity" required>
+                            <option value="">Pilih Komoditas</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Kondisi:</label>
+                        <select id="alertCondition" required>
+                            <option value="above">Harga di atas</option>
+                            <option value="below">Harga di bawah</option>
+                            <option value="change">Perubahan lebih dari</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Nilai:</label>
+                        <input type="number" id="alertValue" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" onclick="closeModal()">Batal</button>
+                        <button type="submit">Simpan Alert</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="market_script.js"></script>
+</body>
+</html>
