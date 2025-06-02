@@ -1,0 +1,70 @@
+{
+  "tips": [
+    {
+      "icon": "📦",
+      "title": "Packaging & Presentasi",
+      "content": "Kemasan yang baik dapat meningkatkan nilai jual produk hingga 20-30%.",
+      "list": [
+        "Gunakan kemasan bersih dan menarik",
+        "Beri label nama produk dan asal",
+        "Sortir berdasarkan kualitas",
+        "Jaga kebersihan produk"
+      ]
+    },
+    {
+      "icon": "🤝",
+      "title": "Membangun Relasi",
+      "content": "Hubungan jangka panjang dengan pembeli dapat memberikan stabilitas harga.",
+      "list": [
+        "Jaga konsistensi kualitas",
+        "Tepat waktu dalam pengiriman",
+        "Komunikasi yang baik",
+        "Berikan bonus untuk pembelian besar"
+      ]
+    },
+    {
+      "icon": "📊",
+      "title": "Analisis Pasar",
+      "content": "Pantau trend harga dan permintaan untuk timing jual yang optimal.",
+      "list": [
+        "Monitor harga harian",
+        "Perhatikan musim panen daerah lain",
+        "Ikuti berita komoditas",
+        "Simpan stok saat harga rendah"
+      ]
+    },
+    {
+      "icon": "🌐",
+      "title": "Pemasaran Digital",
+      "content": "Manfaatkan teknologi untuk memperluas jangkauan pasar.",
+      "list": [
+        "Gunakan media sosial",
+        "Gabung grup petani online",
+        "Buat profil di marketplace",
+        "Dokumentasi proses pertanian"
+      ]
+    },
+    {
+      "icon": "💼",
+      "title": "Negosiasi Harga",
+      "content": "Teknik negosiasi yang tepat dapat meningkatkan margin keuntungan.",
+      "list": [
+        "Ketahui harga pasar terkini",
+        "Tawarkan kualitas premium",
+        "Bundling dengan produk lain",
+        "Fleksibel dengan volume pembelian"
+      ]
+    },
+    {
+      "icon": "📈",
+      "title": "Timing Penjualan",
+      "content": "Waktu yang tepat dalam menjual dapat memaksimalkan keuntungan.",
+      "list": [
+        "Hindari panen raya untuk harga lebih baik",
+        "Manfaatkan momen hari besar",
+        "Simpan produk tahan lama saat harga rendah",
+        "Jual bertahap untuk stabilitas cash flow"
+      ]
+    }
+  ]
+}

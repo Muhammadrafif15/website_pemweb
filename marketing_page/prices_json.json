@@ -1,0 +1,124 @@
+{
+  "prices": [
+    {
+      "commodity": "Jagung Pipil",
+      "tengkulak": {
+        "price": "Rp 6,800/kg",
+        "class": "price-low"
+      },
+      "koperasi": {
+        "price": "Rp 7,200/kg",
+        "class": "price-medium"
+      },
+      "pasar": {
+        "price": "Rp 7,800/kg",
+        "class": "price-high"
+      },
+      "industri": {
+        "price": "Rp 7,100/kg",
+        "class": "price-medium"
+      },
+      "recommendation": "Pasar Langsung"
+    },
+    {
+      "commodity": "Beras",
+      "tengkulak": {
+        "price": "Rp 11,500/kg",
+        "class": "price-low"
+      },
+      "koperasi": {
+        "price": "Rp 12,800/kg",
+        "class": "price-high"
+      },
+      "pasar": {
+        "price": "Rp 13,200/kg",
+        "class": "price-high"
+      },
+      "industri": {
+        "price": "Rp 12,000/kg",
+        "class": "price-medium"
+      },
+      "recommendation": "Pasar Langsung"
+    },
+    {
+      "commodity": "Kedelai",
+      "tengkulak": {
+        "price": "Rp 9,200/kg",
+        "class": "price-low"
+      },
+      "koperasi": {
+        "price": "Rp 9,800/kg",
+        "class": "price-medium"
+      },
+      "pasar": {
+        "price": "Rp 10,200/kg",
+        "class": "price-medium"
+      },
+      "industri": {
+        "price": "Rp 10,500/kg",
+        "class": "price-high"
+      },
+      "recommendation": "Industri"
+    },
+    {
+      "commodity": "Cabai Merah",
+      "tengkulak": {
+        "price": "Rp 32,000/kg",
+        "class": "price-medium"
+      },
+      "koperasi": {
+        "price": "Rp 34,000/kg",
+        "class": "price-medium"
+      },
+      "pasar": {
+        "price": "Rp 38,000/kg",
+        "class": "price-high"
+      },
+      "industri": {
+        "price": "-",
+        "class": ""
+      },
+      "recommendation": "Pasar Langsung"
+    },
+    {
+      "commodity": "Bawang Merah",
+      "tengkulak": {
+        "price": "Rp 28,000/kg",
+        "class": "price-low"
+      },
+      "koperasi": {
+        "price": "Rp 31,000/kg",
+        "class": "price-medium"
+      },
+      "pasar": {
+        "price": "Rp 35,000/kg",
+        "class": "price-high"
+      },
+      "industri": {
+        "price": "Rp 29,500/kg",
+        "class": "price-medium"
+      },
+      "recommendation": "Pasar Langsung"
+    },
+    {
+      "commodity": "Tomat",
+      "tengkulak": {
+        "price": "Rp 8,500/kg",
+        "class": "price-low"
+      },
+      "koperasi": {
+        "price": "Rp 9,200/kg",
+        "class": "price-medium"
+      },
+      "pasar": {
+        "price": "Rp 11,000/kg",
+        "class": "price-high"
+      },
+      "industri": {
+        "price": "Rp 8,800/kg",
+        "class": "price-low"
+      },
+      "recommendation": "Pasar Langsung"
+    }
+  ]
+}

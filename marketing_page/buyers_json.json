@@ -1,0 +1,154 @@
+{
+  "buyers": [
+    {
+      "id": "cv-maju-jaya",
+      "name": "CV Maju Jaya",
+      "type": "tengkulak",
+      "capacity": "50 ton/bulan",
+      "region": "jabar",
+      "paymentSystem": "Cash",
+      "pickup": "Tersedia",
+      "commodities": ["jagung", "kedelai"],
+      "rating": 4.8,
+      "reviewCount": 24,
+      "description": "Pengepul komoditas jagung dan kedelai dengan pengalaman 15 tahun. Melayani wilayah Jawa Barat dan sekitarnya.",
+      "details": {
+        "kapasitas": "50 ton per bulan",
+        "wilayah": "Jawa Barat (Bandung, Garut, Tasikmalaya)",
+        "pembayaran": "Cash on delivery",
+        "pickup": "Gratis untuk minimal 2 ton",
+        "kualitas": "Semua grade diterima"
+      },
+      "contact": {
+        "phone": "0812-3456-7890",
+        "whatsapp": "0812-3456-7890",
+        "address": "Jl. Pasar Induk No. 45, Bandung"
+      },
+      "advantages": [
+        "Pembayaran langsung tunai",
+        "Pickup gratis untuk pembelian besar",
+        "Fleksible terhadap kualitas",
+        "Proses cepat tanpa birokrasi"
+      ]
+    },
+    {
+      "id": "kud-sejahtera",
+      "name": "KUD Tani Sejahtera",
+      "type": "koperasi",
+      "capacity": "100 ton/bulan",
+      "region": "jateng",
+      "paymentSystem": "Transfer",
+      "pickup": "Bonus Kualitas Premium",
+      "commodities": ["padi", "jagung"],
+      "rating": 4.6,
+      "reviewCount": 18,
+      "description": "Koperasi yang menampung hasil panen petani anggota dengan sistem bagi hasil yang adil.",
+      "details": {
+        "kapasitas": "100 ton per bulan",
+        "wilayah": "Jawa Tengah (Solo, Klaten, Sragen)",
+        "pembayaran": "Transfer bank 7 hari",
+        "bonus": "Kualitas premium +5%",
+        "anggota": "250 petani aktif"
+      },
+      "contact": {
+        "phone": "0271-123456",
+        "email": "kud.sejahtera@gmail.com",
+        "address": "Jl. Raya Solo-Klaten Km 15"
+      },
+      "advantages": [
+        "Harga lebih stabil",
+        "Bonus untuk kualitas premium",
+        "Pendampingan teknis tersedia",
+        "Akses ke pasar yang lebih luas"
+      ]
+    },
+    {
+      "id": "pt-pangan",
+      "name": "PT Pangan Nusantara",
+      "type": "industri",
+      "capacity": "200 ton/bulan",
+      "region": "jatim",
+      "paymentSystem": "Kontrak Jangka Panjang",
+      "pickup": "Sertifikasi Diperlukan",
+      "commodities": ["kedelai", "jagung", "gandum"],
+      "rating": 4.7,
+      "reviewCount": 31,
+      "description": "Perusahaan industri pangan yang membutuhkan pasokan bahan baku berkualitas tinggi secara konsisten.",
+      "details": {
+        "kapasitas": "200 ton per bulan",
+        "wilayah": "Jawa Timur (Surabaya, Malang, Kediri)",
+        "kontrak": "Kontrak jangka panjang 1-2 tahun",
+        "sertifikasi": "GAP, HACCP diperlukan",
+        "pembayaran": "Transfer 14-30 hari"
+      },
+      "contact": {
+        "phone": "031-987654",
+        "email": "procurement@ptpangan.com",
+        "address": "Kawasan Industri SIER, Surabaya"
+      },
+      "advantages": [
+        "Harga premium untuk kualitas tinggi",
+        "Kontrak jangka panjang memberikan kepastian",
+        "Program pendampingan petani",
+        "Akses ke pasar ekspor"
+      ]
+    },
+    {
+      "id": "global-fresh",
+      "name": "Global Fresh Export",
+      "type": "eksportir",
+      "capacity": "Ekspor ke 5 negara",
+      "region": "jabar",
+      "paymentSystem": "Standar International",
+      "pickup": "Harga Premium",
+      "commodities": ["sayuran", "buah"],
+      "rating": 4.9,
+      "reviewCount": 12,
+      "description": "Eksportir produk segar ke pasar internasional dengan standar kualitas global.",
+      "details": {
+        "tujuan": "Singapura, Malaysia, Hongkong, UAE, Jepang",
+        "standar": "GlobalGAP, Organic JAS, USDA Organic",
+        "pembayaran": "LC (Letter of Credit)",
+        "sertifikasi": "Wajib sertifikat organik/GAP",
+        "kapasitas": "Variable sesuai permintaan"
+      },
+      "contact": {
+        "phone": "022-456789",
+        "email": "export@globalfresh.co.id",
+        "address": "Jl. Soekarno-Hatta 123, Bandung"
+      },
+      "advantages": [
+        "Harga premium untuk produk berkualitas ekspor",
+        "Akses ke pasar internasional",
+        "Program sertifikasi gratis",
+        "Pembayaran dalam mata uang asing"
+      ]
+    },
+    {
+      "id": "pasar-modern",
+      "name": "Retail Modern Chain",
+      "type": "retail",
+      "capacity": "150 ton/bulan",
+      "region": "jabar",
+      "paymentSystem": "NET 30",
+      "pickup": "Packaging Khusus",
+      "commodities": ["sayuran", "buah", "padi"],
+      "rating": 4.5,
+      "reviewCount": 28,
+      "description": "Jaringan retail modern yang melayani konsumen perkotaan dengan produk segar berkualitas."
+    },
+    {
+      "id": "agroindustri-lokal",
+      "name": "CV Agroindustri Nusantara",
+      "type": "industri",
+      "capacity": "80 ton/bulan",
+      "region": "jateng",
+      "paymentSystem": "Transfer Bank",
+      "pickup": "Quality Control Ketat",
+      "commodities": ["jagung", "kedelai"],
+      "rating": 4.4,
+      "reviewCount": 19,
+      "description": "Industri pengolahan pakan ternak dan makanan yang membutuhkan bahan baku berkualitas konsisten."
+    }
+  ]
+}

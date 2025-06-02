@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategi Pemasaran - AgriSmart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">AgriSmart</div>
+                <ul class="nav-menu">
+                    <li><a href="#">Klasifikasi Penyakit</a></li>
+                    <li><a href="#">Alat Pertanian</a></li>
+                    <li><a href="#">Harga Pasar</a></li>
+                    <li><a href="#">Permodalan</a></li>
+                    <li><a href="#" class="active">Pemasaran</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>📈 Strategi Pemasaran Hasil Panen</h1>
+            <p>Panduan lengkap jalur distribusi dan direktori pembeli terverifikasi untuk memaksimalkan keuntungan</p>
+        </section>
+
+        <!-- Distribution Channels -->
+        <section class="distribution-section">
+            <h2 class="section-title">🚛 Pilihan Jalur Distribusi</h2>
+            <div class="distribution-grid" id="distributionGrid">
+                <!-- Distribution cards will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Buyer Directory -->
+        <section class="buyer-section">
+            <h2 class="section-title">📋 Direktori Pembeli Terverifikasi</h2>
+            
+            <div class="buyer-filters">
+                <select class="filter-select" id="buyerTypeFilter">
+                    <option value="">Semua Jenis</option>
+                    <option value="tengkulak">Tengkulak</option>
+                    <option value="koperasi">Koperasi</option>
+                    <option value="industri">Industri</option>
+                    <option value="eksportir">Eksportir</option>
+                </select>
+                <select class="filter-select" id="commodityFilter">
+                    <option value="">Semua Komoditas</option>
+                    <option value="jagung">Jagung</option>
+                    <option value="padi">Padi</option>
+                    <option value="kedelai">Kedelai</option>
+                    <option value="sayuran">Sayuran</option>
+                </select>
+                <select class="filter-select" id="regionFilter">
+                    <option value="">Semua Wilayah</option>
+                    <option value="jabar">Jawa Barat</option>
+                    <option value="jateng">Jawa Tengah</option>
+                    <option value="jatim">Jawa Timur</option>
+                </select>
+                <input type="text" class="search-input" placeholder="Cari nama pembeli..." id="buyerSearch">
+            </div>
+
+            <div class="buyer-grid" id="buyerGrid">
+                <!-- Buyer cards will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Price Comparison -->
+        <section class="price-comparison">
+            <h2 class="section-title">💰 Perbandingan Harga Berdasarkan Jalur</h2>
+            <table class="comparison-table" id="priceTable">
+                <thead>
+                    <tr>
+                        <th>Komoditas</th>
+                        <th>Tengkulak</th>
+                        <th>Koperasi</th>
+                        <th>Pasar Langsung</th>
+                        <th>Industri</th>
+                        <th>Rekomendasi</th>
+                    </tr>
+                </thead>
+                <tbody id="priceTableBody">
+                    <!-- Price data will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Marketing Tips -->
+        <section class="tips-section" id="tipsSection">
+            <!-- Tips will be populated by JavaScript -->
+        </section>
+    </div>
+
+    <!-- Modal for detailed information -->
+    <div class="modal" id="detailModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="modalContent">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
