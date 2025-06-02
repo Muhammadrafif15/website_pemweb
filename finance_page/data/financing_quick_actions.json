@@ -1,0 +1,31 @@
+{
+  "actions": [
+    {
+      "icon": "🏦",
+      "title": "Cari Lembaga Keuangan",
+      "description": "Browse direktori bank, koperasi, dan lembaga pembiayaan yang menyediakan kredit pertanian",
+      "action": "scrollToSection",
+      "target": "institutions"
+    },
+    {
+      "icon": "📋",
+      "title": "Panduan Aplikasi",
+      "description": "Pelajari langkah-langkah mengajukan pinjaman modal usaha tani",
+      "action": "scrollToSection",
+      "target": "guide"
+    },
+    {
+      "icon": "🧮",
+      "title": "Kalkulator Kredit",
+      "description": "Hitung estimasi cicilan dan bunga untuk berbagai skema pinjaman",
+      "action": "showCalculator"
+    },
+    {
+      "icon": "🛡️",
+      "title": "Tips Anti Penipuan",
+      "description": "Kenali ciri-ciri penipuan kredit dan cara menghindarinya",
+      "action": "scrollToSection",
+      "target": "warnings"
+    }
+  ]
+}

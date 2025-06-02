@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akses Permodalan - AgriSmart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">AgriSmart</div>
+                <ul class="nav-menu">
+                    <li><a href="#">Klasifikasi Penyakit</a></li>
+                    <li><a href="#">Alat Pertanian</a></li>
+                    <li><a href="#">Harga Pasar</a></li>
+                    <li><a href="#" class="active">Permodalan</a></li>
+                    <li><a href="#">Pemasaran</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>💰 Akses Permodalan Pertanian</h1>
+            <p>Direktori lengkap lembaga pembiayaan dan panduan step-by-step untuk mengajukan kredit pertanian</p>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="quick-actions" id="quickActions">
+            <!-- Quick action cards will be populated by JavaScript -->
+        </section>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Institution Directory -->
+            <div class="directory-section" id="institutions">
+                <h2 class="section-title">🏦 Direktori Lembaga Pembiayaan</h2>
+                
+                <div class="filter-bar">
+                    <select class="filter-select" id="typeFilter">
+                        <option value="">Semua Jenis</option>
+                        <option value="bank">Bank</option>
+                        <option value="koperasi">Koperasi</option>
+                        <option value="fintech">Fintech</option>
+                        <option value="pemerintah">Program Pemerintah</option>
+                    </select>
+                    <select class="filter-select" id="regionFilter">
+                        <option value="">Semua Wilayah</option>
+                        <option value="jabar">Jawa Barat</option>
+                        <option value="jateng">Jawa Tengah</option>
+                        <option value="jatim">Jawa Timur</option>
+                        <option value="sumut">Sumatera Utara</option>
+                    </select>
+                    <input type="text" class="search-input" placeholder="Cari nama lembaga..." id="searchInput">
+                </div>
+
+                <div class="institution-list" id="institutionList">
+                    <!-- Institution cards will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar" id="sidebar">
+                <!-- Sidebar content will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Application Guide -->
+        <section class="guide-section" id="guide">
+            <h2 class="guide-title">📋 Panduan Langkah-demi-Langkah</h2>
+            <div class="steps-container" id="stepsContainer">
+                <!-- Steps will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Warning Section -->
+        <section class="warning-section" id="warnings">
+            <div class="warning-title">Tips Menghindari Penipuan Kredit</div>
+            <ul class="warning-list" id="warningList">
+                <!-- Warning items will be populated by JavaScript -->
+            </ul>
+        </section>
+    </div>
+
+    <!-- Institution Detail Modal -->
+    <div class="modal" id="institutionModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="modalContent">
+                <!-- Modal content will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app-fn.js"></script>
+</body>
+</html>

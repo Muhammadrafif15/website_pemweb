@@ -1,0 +1,40 @@
+{
+  "steps": [
+    {
+      "number": 1,
+      "icon": "🔍",
+      "title": "Riset & Pilih Lembaga",
+      "description": "Bandingkan suku bunga, syarat, dan ketentuan dari berbagai lembaga keuangan"
+    },
+    {
+      "number": 2,
+      "icon": "📄",
+      "title": "Siapkan Dokumen",
+      "description": "Kumpulkan semua dokumen yang diperlukan dalam bentuk asli dan fotokopi"
+    },
+    {
+      "number": 3,
+      "icon": "📝",
+      "title": "Isi Formulir Aplikasi",
+      "description": "Lengkapi formulir dengan data yang akurat dan jujur"
+    },
+    {
+      "number": 4,
+      "icon": "🏦",
+      "title": "Submit ke Bank/Lembaga",
+      "description": "Serahkan dokumen dan formulir ke cabang terdekat"
+    },
+    {
+      "number": 5,
+      "icon": "⏳",
+      "title": "Menunggu Verifikasi",
+      "description": "Proses analisa kredit biasanya memakan waktu 7-14 hari kerja"
+    },
+    {
+      "number": 6,
+      "icon": "✅",
+      "title": "Pencairan Dana",
+      "description": "Jika disetujui, dana akan dicairkan sesuai dengan perjanjian"
+    }
+  ]
+}

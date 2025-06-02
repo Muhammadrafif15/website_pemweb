@@ -1,0 +1,47 @@
+{
+  "cards": [
+    {
+      "icon": "📄",
+      "title": "Dokumen yang Diperlukan",
+      "type": "requirement-list",
+      "items": [
+        "KTP dan Kartu Keluarga",
+        "Surat Keterangan Usaha",
+        "Laporan Keuangan Sederhana",
+        "Sertifikat/Bukti Kepemilikan Lahan",
+        "NPWP (jika ada)",
+        "Foto Usaha Tani",
+        "Rencana Anggaran Biaya (RAB)",
+        "Surat Izin Usaha (jika ada)",
+        "Laporan Arus Kas",
+        "Foto Jaminan (jika diperlukan)"
+      ]
+    },
+    {
+      "icon": "💡",
+      "title": "Tips Sukses Mengajukan Kredit",
+      "type": "tips-list",
+      "items": [
+        "Siapkan dokumen lengkap dan asli sebelum mengajukan",
+        "Buat rencana usaha yang realistis dan detail",
+        "Pastikan memiliki riwayat keuangan yang baik",
+        "Pilih jenis kredit yang sesuai dengan kebutuhan",
+        "Konsultasikan dengan petugas bank sebelum mengajukan",
+        "Jaga track record pembayaran yang baik",
+        "Buat proposal usaha yang menarik",
+        "Siapkan rencana pelunasan yang realistic"
+      ]
+    },
+    {
+      "icon": "📞",
+      "title": "Bantuan & Konsultasi",
+      "type": "help-center",
+      "content": {
+        "icon": "🎧",
+        "title": "Call Center",
+        "schedule": "Senin-Jumat: 08:00-17:00",
+        "buttonText": "Hubungi Sekarang"
+      }
+    }
+  ]
+}

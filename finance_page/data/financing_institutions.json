@@ -1,0 +1,234 @@
+{
+  "institutions": [
+    {
+      "id": "bri",
+      "name": "Bank Rakyat Indonesia (BRI)",
+      "type": "bank",
+      "region": "jabar",
+      "creditTypes": "KUR, KUPEDES",
+      "plafon": "Rp 25 juta - 500 juta",
+      "bunga": "6% - 12% per tahun",
+      "jangkaWaktu": "1 - 5 tahun",
+      "description": "Bank terbesar di Indonesia yang fokus pada sektor UMKM dan pertanian dengan jaringan cabang terluas.",
+      "products": [
+        {
+          "name": "KUR Mikro",
+          "plafon": "Rp 25 juta",
+          "bunga": "6% per tahun",
+          "jangka": "3 tahun",
+          "syarat": "Usaha min. 6 bulan, tidak sedang menerima kredit"
+        },
+        {
+          "name": "KUR Kecil",
+          "plafon": "Rp 500 juta",
+          "bunga": "6% per tahun",
+          "jangka": "5 tahun",
+          "syarat": "Usaha min. 1 tahun, memiliki izin usaha"
+        },
+        {
+          "name": "KUPEDES",
+          "plafon": "Rp 100 - 500 juta",
+          "bunga": "12-18% per tahun",
+          "jangka": "1-5 tahun",
+          "syarat": "Memiliki agunan, riwayat kredit baik"
+        }
+      ],
+      "contact": {
+        "phone": "14017 / 1500017",
+        "website": "www.bri.co.id",
+        "address": "Kantor Pusat: Jl. Jend. Sudirman Kav. 44-46, Jakarta"
+      },
+      "advantages": [
+        "Jaringan cabang terluas di Indonesia",
+        "Proses persetujuan relatif cepat",
+        "Berpengalaman dalam kredit pertanian",
+        "Bunga kompetitif untuk KUR"
+      ]
+    },
+    {
+      "id": "mandiri",
+      "name": "Bank Mandiri",
+      "type": "bank",
+      "region": "jateng",
+      "creditTypes": "KUR, Kredit Agribisnis",
+      "plafon": "Rp 25 juta - 750 juta",
+      "bunga": "6% - 14% per tahun",
+      "jangkaWaktu": "1 - 5 tahun",
+      "description": "Bank terbesar di Indonesia dengan komitmen mendukung sektor pertanian dan UMKM.",
+      "products": [
+        {
+          "name": "KUR Mandiri",
+          "plafon": "Rp 25 - 500 juta",
+          "bunga": "6% per tahun",
+          "jangka": "5 tahun",
+          "syarat": "Usaha produktif, tidak sedang menerima kredit program"
+        },
+        {
+          "name": "Kredit Agribisnis",
+          "plafon": "Rp 500 juta - 5 miliar",
+          "bunga": "10-14% per tahun",
+          "jangka": "1-5 tahun",
+          "syarat": "Memiliki legalitas usaha, rencana bisnis"
+        }
+      ],
+      "contact": {
+        "phone": "14000",
+        "website": "www.bankmandiri.co.id",
+        "address": "Kantor Pusat: Jl. Jend. Gatot Subroto Kav. 36-38, Jakarta"
+      },
+      "advantages": [
+        "Produk kredit beragam",
+        "Teknologi digital terdepan",
+        "Pendampingan bisnis tersedia",
+        "Jaringan ATM terluas"
+      ]
+    },
+    {
+      "id": "koperasi-sejahtera",
+      "name": "Koperasi Tani Maju Bersama",
+      "type": "koperasi",
+      "region": "jateng",
+      "creditTypes": "Modal Kerja, Investasi",
+      "plafon": "Rp 5 juta - 100 juta",
+      "bunga": "8% - 15% per tahun",
+      "jangkaWaktu": "6 bulan - 3 tahun",
+      "description": "Koperasi yang khusus melayani kebutuhan permodalan petani dengan pendekatan yang lebih personal.",
+      "products": [
+        {
+          "name": "Kredit Modal Kerja",
+          "plafon": "Rp 5-50 juta",
+          "bunga": "8-12% per tahun",
+          "jangka": "6-24 bulan",
+          "syarat": "Anggota koperasi, memiliki usaha tani"
+        },
+        {
+          "name": "Kredit Investasi",
+          "plafon": "Rp 25-100 juta",
+          "bunga": "10-15% per tahun",
+          "jangka": "1-3 tahun",
+          "syarat": "Anggota aktif, rencana investasi jelas"
+        }
+      ],
+      "contact": {
+        "phone": "0271-123456",
+        "website": "www.koperasitani.co.id",
+        "address": "Jl. Pertanian No. 123, Solo, Jawa Tengah"
+      },
+      "advantages": [
+        "Proses lebih fleksibel dan personal",
+        "Memahami kondisi petani lokal",
+        "Pendampingan usaha tersedia",
+        "Syarat relatif mudah untuk anggota"
+      ]
+    },
+    {
+      "id": "koperasi-makmur",
+      "name": "Koperasi Simpan Pinjam Tani Makmur",
+      "type": "koperasi",
+      "region": "jabar",
+      "creditTypes": "Simpan Pinjam, Modal Usaha",
+      "plafon": "Rp 2 juta - 75 juta",
+      "bunga": "9% - 18% per tahun",
+      "jangkaWaktu": "3 bulan - 2 tahun",
+      "description": "Koperasi dengan fokus pada petani kecil dan menengah di wilayah Jawa Barat."
+    },
+    {
+      "id": "tanifund",
+      "name": "TaniFund Digital",
+      "type": "fintech",
+      "region": "jabar",
+      "creditTypes": "Pinjaman Online",
+      "plafon": "Rp 1 juta - 50 juta",
+      "bunga": "12% - 24% per tahun",
+      "jangkaWaktu": "3 - 24 bulan",
+      "description": "Platform fintech yang menyediakan pinjaman digital khusus untuk petani dengan proses cepat dan mudah.",
+      "products": [
+        {
+          "name": "Pinjaman Kilat",
+          "plafon": "Rp 1-10 juta",
+          "bunga": "18-24% per tahun",
+          "jangka": "3-12 bulan",
+          "syarat": "Verifikasi digital, usaha min. 3 bulan"
+        },
+        {
+          "name": "Pinjaman Usaha",
+          "plafon": "Rp 10-50 juta",
+          "bunga": "12-18% per tahun",
+          "jangka": "6-24 bulan",
+          "syarat": "Laporan usaha, riwayat transaksi"
+        }
+      ],
+      "contact": {
+        "phone": "0804-1-TANI",
+        "website": "www.tanifund.id",
+        "address": "Gedung Cyber, Jakarta Selatan"
+      },
+      "advantages": [
+        "Proses aplikasi 100% online",
+        "Pencairan dana dalam 24 jam",
+        "Syarat dokumen minimal",
+        "Cicilan fleksibel"
+      ]
+    },
+    {
+      "id": "agritech-lending",
+      "name": "AgriTech Lending",
+      "type": "fintech",
+      "region": "jatim",
+      "creditTypes": "Pinjaman Berbasis Teknologi",
+      "plafon": "Rp 5 juta - 100 juta",
+      "bunga": "10% - 20% per tahun",
+      "jangkaWaktu": "6 - 36 bulan",
+      "description": "Fintech lending yang menggunakan teknologi untuk analisis risiko kredit petani."
+    },
+    {
+      "id": "kur-program",
+      "name": "Program Kredit Usaha Rakyat (KUR)",
+      "type": "pemerintah",
+      "region": "jatim",
+      "creditTypes": "KUR Mikro, Kecil, TKI",
+      "plafon": "Rp 25 juta - 500 juta",
+      "bunga": "6% per tahun",
+      "jangkaWaktu": "1 - 5 tahun",
+      "description": "Program pemerintah untuk mendukung UMKM dan pertanian dengan bunga subsidi.",
+      "products": [
+        {
+          "name": "KUR Mikro",
+          "plafon": "Rp 25 juta",
+          "bunga": "6% per tahun",
+          "jangka": "3 tahun",
+          "syarat": "Usaha produktif, tidak sedang menerima kredit"
+        },
+        {
+          "name": "KUR Kecil",
+          "plafon": "Rp 500 juta",
+          "bunga": "6% per tahun",
+          "jangka": "5 tahun",
+          "syarat": "Usaha layak, memiliki SIUP"
+        }
+      ],
+      "contact": {
+        "phone": "021-3441943",
+        "website": "www.kur.ekon.go.id",
+        "address": "Kementerian Koordinator Bidang Perekonomian, Jakarta"
+      },
+      "advantages": [
+        "Bunga rendah bersubsidi",
+        "Tersedia di seluruh Indonesia",
+        "Tanpa agunan untuk KUR Mikro",
+        "Dukungan pemerintah penuh"
+      ]
+    },
+    {
+      "id": "program-ultra-mikro",
+      "name": "Program Ultra Mikro (UMi)",
+      "type": "pemerintah",
+      "region": "sumut",
+      "creditTypes": "Bantuan Modal Usaha",
+      "plafon": "Rp 2 - 10 juta",
+      "bunga": "0% per tahun",
+      "jangkaWaktu": "10 bulan",
+      "description": "Program bantuan modal usaha untuk masyarakat prasejahtera yang memiliki usaha produktif."
+    }
+  ]
+}
