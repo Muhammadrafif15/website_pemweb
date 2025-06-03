@@ -1,0 +1,16 @@
+{
+  "name": "agrismart-integrated",
+  "version": "1.0.0",
+  "description": "AgriSmart - Integrated Platform (preserving existing structure)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["agriculture", "ai", "nodejs"],
+  "author": "AgriSmart Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
