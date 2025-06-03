@@ -77,7 +77,7 @@ function handlePageRoute(req, res, requestPath) {
         return;
     }
     
-    let htmlContent = readFile(filePath);
+    let htmlContent = updatePageTitle(htmlContent, routeInfo.title);
     
     if (htmlContent === null) {
         sendErrorResponse(res, 500, 'Error reading page');

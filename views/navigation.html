@@ -1,0 +1,170 @@
+<!-- Navigation Global AgriSmart -->
+<style>
+/* Navigation Styles - Global */
+.agrismart-nav-override {
+    background: #5D8736 !important;
+    padding: 15px 0 !important;
+    border-bottom: 2px solid #809D3C !important;
+    margin-bottom: 30px !important;
+    position: relative !important;
+    z-index: 1000 !important;
+}
+
+.agrismart-nav-override .container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+}
+
+.agrismart-nav-override .nav {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.agrismart-nav-override .logo {
+    font-size: 24px !important;
+    font-weight: bold !important;
+    color: #F4FFC3 !important;
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+}
+
+.agrismart-nav-override .logo::before {
+    content: "🌾" !important;
+    margin-right: 10px !important;
+}
+
+.agrismart-nav-override .nav-menu {
+    display: flex !important;
+    gap: 20px !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.agrismart-nav-override .nav-menu li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.agrismart-nav-override .nav-menu a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    display: block !important;
+}
+
+.agrismart-nav-override .nav-menu a:hover {
+    background: #809D3C !important;
+    color: #F4FFC3 !important;
+    transform: translateY(-1px) !important;
+}
+
+.agrismart-nav-override .nav-menu a.active {
+    background: #809D3C !important;
+    color: #F4FFC3 !important;
+    font-weight: bold !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .agrismart-nav-override .nav {
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+    
+    .agrismart-nav-override .nav-menu {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px !important;
+    }
+    
+    .agrismart-nav-override .nav-menu a {
+        padding: 6px 12px !important;
+        font-size: 12px !important;
+    }
+}
+
+/* Hide existing headers */
+.header {
+    display: none !important;
+}
+</style>
+
+<header class="agrismart-nav-override">
+    <div class="container">
+        <nav class="nav">
+            <a href="/" class="logo">AgriSmart</a>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-home">🏠 Beranda</a></li>
+                <li><a href="/klasifikasi" class="nav-klasifikasi">🔬 Klasifikasi Penyakit</a></li>
+                <li><a href="/alat-pertanian" class="nav-alat">🛠️ Alat Pertanian</a></li>
+                <li><a href="/harga-pasar" class="nav-pasar">📊 Harga Pasar</a></li>
+                <li><a href="/permodalan" class="nav-modal">💰 Permodalan</a></li>
+                <li><a href="/pemasaran" class="nav-jual">📈 Pemasaran</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+// Navigation Active State Handler
+(function() {
+    // Get current path
+    const currentPath = window.location.pathname;
+    
+    // Remove active class from all nav links
+    document.querySelectorAll('.agrismart-nav-override .nav-menu a').forEach(link => {
+        link.classList.remove('active');
+    });
+    
+    // Add active class based on current path
+    let activeLink = null;
+    
+    switch(currentPath) {
+        case '/':
+            activeLink = document.querySelector('.nav-home');
+            break;
+        case '/klasifikasi':
+            activeLink = document.querySelector('.nav-klasifikasi');
+            break;
+        case '/alat-pertanian':
+            activeLink = document.querySelector('.nav-alat');
+            break;
+        case '/harga-pasar':
+            activeLink = document.querySelector('.nav-pasar');
+            break;
+        case '/permodalan':
+            activeLink = document.querySelector('.nav-modal');
+            break;
+        case '/pemasaran':
+            activeLink = document.querySelector('.nav-jual');
+            break;
+    }
+    
+    if (activeLink) {
+        activeLink.classList.add('active');
+    }
+    
+    // Add smooth transitions
+    document.querySelectorAll('.agrismart-nav-override .nav-menu a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Add loading indicator
+            const originalText = this.innerHTML;
+            this.innerHTML = '⏳ Loading...';
+            
+            setTimeout(() => {
+                if (this.innerHTML === '⏳ Loading...') {
+                    this.innerHTML = originalText;
+                }
+            }, 2000);
+        });
+    });
+})();
+</script>

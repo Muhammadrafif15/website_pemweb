@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriSmart - Smart Agriculture Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto Mono', 'Courier New', monospace;
+            background: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #5D8736 0%, #809D3C 50%, #A9C46C 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="20" font-size="15" opacity="0.1">🌾</text><text y="40" x="20" font-size="12" opacity="0.1">🌽</text><text y="60" x="40" font-size="10" opacity="0.1">🚜</text><text y="80" x="60" font-size="14" opacity="0.1">📊</text></svg>') repeat;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background: #F4FFC3;
+            color: #5D8736;
+            border-color: #F4FFC3;
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: #F4FFC3;
+            border-color: #F4FFC3;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #5D8736;
+            transform: translateY(-2px);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            color: #5D8736;
+            margin-bottom: 60px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            border: 2px solid #A9C46C;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(169, 196, 108, 0.1), transparent);
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
+            opacity: 0;
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+            animation: shimmer 1s ease;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(93, 135, 54, 0.2);
+            border-color: #5D8736;
+        }
+
+        .feature-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .feature-card h3 {
+            color: #5D8736;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .feature-link {
+            color: #5D8736;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .feature-link:hover {
+            color: #809D3C;
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 60px 0;
+            background: #5D8736;
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #F4FFC3;
+        }
+
+        .stat-label {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* Quick Links */
+        .quick-links {
+            padding: 60px 0;
+            background: white;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .link-card {
+            background: #F4FFC3;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #5D8736;
+            border: 2px solid transparent;
+        }
+
+        .link-card:hover {
+            background: #5D8736;
+            color: white;
+            transform: translateY(-3px);
+            border-color: #809D3C;
+        }
+
+        .link-icon {
+            font-size: 32px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>🌾 Selamat Datang di AgriSmart</h1>
+                <p>Platform pertanian cerdas yang mengintegrasikan teknologi AI untuk membantu petani Indonesia meningkatkan produktivitas dan efisiensi usaha tani</p>
+                <div class="hero-buttons">
+                    <a href="/klasifikasi" class="btn btn-primary">🔬 Mulai Klasifikasi AI</a>
+                    <a href="/alat-pertanian" class="btn btn-secondary">🛠️ Lihat Katalog Alat</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">🚀 Fitur Unggulan Platform</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🔬</span>
+                    <h3>Klasifikasi Penyakit AI</h3>
+                    <p>Identifikasi penyakit tanaman jagung dan padi dengan akurasi tinggi menggunakan teknologi TensorFlow.js. Deteksi cepat dan akurat langsung dari browser.</p>
+                    <a href="/klasifikasi" class="feature-link">Mulai Klasifikasi →</a>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🛠️</span>
+                    <h3>Katalog Alat Pertanian</h3>
+                    <p>Temukan alat pertanian terbaik dengan perbandingan harga, spesifikasi lengkap, dan review dari petani lain. Dari alat tradisional hingga modern.</p>
+                    <a href="/alat-pertanian" class="feature-link">Lihat Katalog →</a>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">📊</span>
+                    <h3>Informasi Harga Pasar</h3>
+                    <p>Pantau harga komoditas real-time dan analisis trend pasar untuk keputusan bisnis yang tepat. Data akurat dari berbagai pasar Indonesia.</p>
+                    <a href="/harga-pasar" class="feature-link">Cek Harga Pasar →</a>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">💰</span>
+                    <h3>Akses Permodalan</h3>
+                    <p>Temukan sumber pembiayaan dan kredit pertanian dari berbagai lembaga keuangan. Panduan lengkap pengajuan modal usaha tani.</p>
+                    <a href="/permodalan" class="feature-link">Cari Modal →</a>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">📈</span>
+                    <h3>Strategi Pemasaran</h3>
+                    <p>Direktori pembeli terverifikasi dan strategi pemasaran untuk memaksimalkan keuntungan. Dari tengkulak hingga eksportir.</p>
+                    <a href="/pemasaran" class="feature-link">Strategi Jual →</a>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🤝</span>
+                    <h3>Komunitas Petani</h3>
+                    <p>Bergabung dengan komunitas petani untuk berbagi pengalaman, tips, dan knowledge sharing. Belajar dari sesama petani sukses.</p>
+                    <a href="#" class="feature-link">Gabung Komunitas →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Petani Terdaftar</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Akurasi AI</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Alat Pertanian</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Update Harga</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="container">
+            <h2 class="section-title">⚡ Akses Cepat</h2>
+            <div class="links-grid">
+                <a href="/klasifikasi" class="link-card">
+                    <span class="link-icon">🔍</span>
+                    <strong>Deteksi Penyakit</strong>
+                </a>
+                <a href="/harga-pasar" class="link-card">
+                    <span class="link-icon">💹</span>
+                    <strong>Cek Harga Hari Ini</strong>
+                </a>
+                <a href="/alat-pertanian" class="link-card">
+                    <span class="link-icon">🔧</span>
+                    <strong>Cari Alat</strong>
+                </a>
+                <a href="/permodalan" class="link-card">
+                    <span class="link-icon">🏦</span>
+                    <strong>Ajukan Kredit</strong>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Add some interactivity
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Animate stats on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const numbers = entry.target.querySelectorAll('.stat-number');
+                    numbers.forEach(number => {
+                        const finalNumber = number.textContent;
+                        number.textContent = '0';
+                        
+                        let current = 0;
+                        const increment = parseInt(finalNumber) / 20;
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= parseInt(finalNumber)) {
+                                number.textContent = finalNumber;
+                                clearInterval(timer);
+                            } else {
+                                number.textContent = Math.floor(current).toLocaleString();
+                            }
+                        }, 50);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const statsSection = document.querySelector('.stats');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+    </script>
+</body>
+</html>

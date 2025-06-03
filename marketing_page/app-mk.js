@@ -42,88 +42,9 @@ async function loadData() {
     } catch (error) {
         console.error('Error loading data:', error);
         // Fallback to inline data if JSON files are not available
-        loadFallbackData();
     }
 }
 
-// Fallback data if JSON files are not available
-function loadFallbackData() {
-    distributionData = {
-        channels: [
-            {
-                id: 'tengkulak',
-                icon: '🤝',
-                title: 'Melalui Tengkulak',
-                subtitle: 'Penjualan langsung ke pengepul lokal',
-                pros: [
-                    'Pembayaran langsung tunai',
-                    'Tidak perlu sortir kualitas',
-                    'Pickup di lokasi panen',
-                    'Proses cepat dan mudah'
-                ],
-                cons: [
-                    'Harga relatif lebih rendah',
-                    'Tergantung pada tengkulak',
-                    'Margin keuntungan kecil',
-                    'Kualitas kurang dihargai'
-                ],
-                requirements: [
-                    'Hasil panen siap jual',
-                    'Akses jalan untuk kendaraan',
-                    'Komunikasi dengan tengkulak lokal'
-                ]
-            },
-            {
-                id: 'koperasi',
-                icon: '🏢',
-                title: 'Melalui Koperasi',
-                subtitle: 'Penjualan kolektif melalui koperasi tani',
-                pros: [
-                    'Harga lebih stabil',
-                    'Kualitas dihargai',
-                    'Pendampingan tersedia',
-                    'Akses ke pasar yang lebih luas'
-                ],
-                cons: [
-                    'Pembayaran tidak langsung',
-                    'Harus memenuhi standar',
-                    'Proses lebih panjang',
-                    'Perlu menjadi anggota'
-                ],
-                requirements: [
-                    'Menjadi anggota koperasi',
-                    'Memenuhi standar kualitas',
-                    'Komitmen supply reguler',
-                    'Dokumentasi hasil panen'
-                ]
-            },
-            {
-                id: 'pasar',
-                icon: '🏪',
-                title: 'Langsung ke Pasar',
-                subtitle: 'Jual langsung ke konsumen atau retailer',
-                pros: [
-                    'Margin keuntungan tinggi',
-                    'Kontrol harga penuh',
-                    'Hubungan langsung konsumen',
-                    'Feedback produk langsung'
-                ],
-                cons: [
-                    'Butuh modal transportasi',
-                    'Risiko tidak terjual',
-                    'Waktu dan tenaga ekstra',
-                    'Perlu kemampuan marketing'
-                ],
-                requirements: [
-                    'Kendaraan transportasi',
-                    'Kemasan yang menarik',
-                    'Surat izin dagang',
-                    'Strategi pemasaran'
-                ]
-            }
-        ]
-    };
-}
 
 // Render distribution cards
 function renderDistributionCards() {

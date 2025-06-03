@@ -3,9 +3,10 @@
 const routeMapping = {
     // Homepage - default route
     '/': {
-        folder: 'klasifikasi-page', 
-        file: 'index.html',
-        title: 'AgriSmart - Smart Agriculture Platform'
+        folder: 'views', 
+        file: 'homepage.html',
+        title: 'AgriSmart - Smart Agriculture Platform',
+        isCustomPage : true
     },
     
     // Klasifikasi Penyakit

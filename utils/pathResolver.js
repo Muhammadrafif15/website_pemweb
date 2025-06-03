@@ -11,6 +11,11 @@ const fs = require('fs');
 function resolveFilePath(requestPath, routeInfo) {
     if (routeInfo) {
         // Untuk halaman utama, gunakan mapping dari routes
+
+        if (routeInfo.isCustomPage) {
+            return path.join(__dirname, '..', routeInfo.folder, routeInfo.file);
+        }
+        
         return path.join(__dirname, '..', routeInfo.folder, routeInfo.file);
     }
     
