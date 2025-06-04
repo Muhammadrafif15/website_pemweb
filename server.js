@@ -7,6 +7,8 @@ const url = require('url');
 const { getRouteMapping, isStaticFile } = require('./routes');
 const { injectNavigation, updatePageTitle } = require('./utils/templateHelper');
 const { resolveFilePath, getMimeType, fileExists, readFile } = require('./utils/pathResolver');
+const { preloadAllData } = require('./utils/dataLoader');
+const ApiController = require('./controllers/ApiController');
 
 const PORT = process.env.PORT || 3000;
 
@@ -14,11 +16,18 @@ const PORT = process.env.PORT || 3000;
 const server = http.createServer((req, res) => {
     const parsedUrl = url.parse(req.url, true);
     const requestPath = parsedUrl.pathname;
+    const method = req.method;
     
     console.log(`${req.method} ${requestPath}`);
     
     try {
         // Handle static files (CSS, JS, JSON, images)
+
+        if (isApiRoute(requestPath)) {
+            handleApiRequest(req, res, requestPath, method);
+            return;
+        }
+
         if (isStaticFile(requestPath)) {
             handleStaticFile(req, res, requestPath);
             return;
@@ -33,9 +42,16 @@ const server = http.createServer((req, res) => {
     }
 });
 
-/**
- * Handle static files (CSS, JS, JSON, images)
- */
+async function handleApiRequest(req, res, requestPath, method) {
+    if (method === 'GET') {
+        await ApiController.handleApiRequest(req, res);
+    } else if (method === 'POST') {
+        await ApiController.handlePostRequest(req, res);
+    } else {
+        ApiController.sendError(res, 405, 'Method not allowed');
+    }
+}
+
 function handleStaticFile(req, res, requestPath) {
     const filePath = resolveFilePath(requestPath);
     
